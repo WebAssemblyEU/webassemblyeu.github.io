@@ -7884,7 +7884,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
       lineNumber: 31
     },
     __self: this
-  }, "WebAssembly", __jsx("br", {
+  }, "Webassembly", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
