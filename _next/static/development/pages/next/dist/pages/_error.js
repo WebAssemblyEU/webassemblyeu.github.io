@@ -3681,7 +3681,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!*********************************************************************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js ***!
   \*********************************************************************************************************************************************************************************************************************************************************/
@@ -3704,5 +3704,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map
