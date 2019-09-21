@@ -7933,11 +7933,11 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
   displayName: "summit__Logo",
   componentId: "r1rl12-1"
-})(["max-width:450px;width:180px;margin-bottom:20px;"]);
+})(["max-width:450px;width:200px;margin-bottom:20px;"]);
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*******************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsummit&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fpages%2Fsummit.tsx ***!
   \*******************************************************************************************************************************************************************************************************/
@@ -7960,5 +7960,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=summit.js.map
