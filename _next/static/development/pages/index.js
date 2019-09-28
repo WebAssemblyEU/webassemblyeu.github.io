@@ -54,7 +54,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     },
     __self: this
   }, __jsx(Headline, {
-    browser: browser,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
@@ -68,6 +67,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     },
     __self: this
   }), __jsx(Body, {
+    browser: browser,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
@@ -105,7 +105,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 var ArticleBox = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Article__ArticleBox",
   componentId: "sc-16wbgzh-0"
-})(["color:rgba(255,255,255,0.9);font-size:18px;font-weight:400;max-width:500px;margin-top:3vw;display:flex;flex-direction:column;overflow:hidden;transition:0.5s;&:hover{transform:translateX(-100px) opacity:0;}@media screen and (max-width:600px){width:96%;padding-left:2%;padding-right:2%;}"]);
+})(["color:rgba(255,255,255,0.9);font-size:18px;font-weight:400;max-width:500px;margin-top:3vw;display:flex;flex-direction:column;overflow:hidden;transition:0.5s;&:hover{transform:translateX(-100px);opacity:0;}@media screen and (max-width:600px){width:96%;padding-left:2%;padding-right:2%;}"]);
 var Headline = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2.withConfig({
   displayName: "Article__Headline",
   componentId: "sc-16wbgzh-1"

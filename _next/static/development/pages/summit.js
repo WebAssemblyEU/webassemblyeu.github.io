@@ -7823,24 +7823,24 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "summit__Centered",
   componentId: "r1rl12-0"
-})(["display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;width:100vw;"]);
+})(["display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;top:0;right:0;bottom:0;left:0;"]);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return __jsx(Centered, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 18
     },
     __self: this
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 19
     },
     __self: this
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 20
     },
     __self: this
   }, "WebAssembly")), __jsx("div", {
@@ -7849,7 +7849,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 22
     },
     __self: this
   }, __jsx("div", {
@@ -7861,7 +7861,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 23
     },
     __self: this
   }, __jsx(Logo, {
@@ -7869,7 +7869,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     src: "/static/webassembly-logo.svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 32
     },
     __self: this
   })), __jsx("div", {
@@ -7881,13 +7881,13 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 34
     },
     __self: this
   }, "Webassembly", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 43
     },
     __self: this
   }), " Summit"), __jsx("div", {
@@ -7899,7 +7899,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 45
     },
     __self: this
   }, __jsx("span", {
@@ -7909,13 +7909,13 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 53
     },
     __self: this
   }, "February 28-29"), ", 2020", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 54
     },
     __self: this
   }), __jsx("span", {
@@ -7925,7 +7925,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 55
     },
     __self: this
   }, "Google, London"))));
@@ -7937,7 +7937,7 @@ var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withCon
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*******************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsummit&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fpages%2Fsummit.tsx ***!
   \*******************************************************************************************************************************************************************************************************/
@@ -7960,5 +7960,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=summit.js.map
