@@ -22,7 +22,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "summit__Centered",
   componentId: "r1rl12-0"
-})(["display:flex;flex-direction:column;align-items:center;position:absolute;top:0;right:0;bottom:0;left:0;"]);
+})(["display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;top:0;right:0;bottom:0;left:0;"]);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return __jsx(Centered, {
     __source: {
@@ -111,7 +111,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
       lineNumber: 53
     },
     __self: this
-  }, "February 28-29"), ", 2020", __jsx("br", {
+  }, "February 10"), ", 2020", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54
@@ -127,7 +127,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
       lineNumber: 55
     },
     __self: this
-  }, "Google, London"))));
+  }, "Google, Plymouth St 1625, Mountain View CA"))));
 });
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
   displayName: "summit__Logo",
@@ -137,4 +137,4 @@ var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withCon
 /***/ })
 
 })
-//# sourceMappingURL=summit.js.98feeb3f3dbcf4d8de93.hot-update.js.map
+//# sourceMappingURL=summit.js.ec8c89d3ea2daf962140.hot-update.js.map

@@ -7912,7 +7912,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
       lineNumber: 53
     },
     __self: this
-  }, "February 28-29"), ", 2020", __jsx("br", {
+  }, "February 10"), ", 2020", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54
@@ -7928,7 +7928,13 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
       lineNumber: 55
     },
     __self: this
-  }, "Google, London"))));
+  }, "Google, Plymouth St 1625", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }), "Mountain View CA"))));
 });
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
   displayName: "summit__Logo",

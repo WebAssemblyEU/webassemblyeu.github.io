@@ -22,24 +22,24 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "summit__Centered",
   componentId: "r1rl12-0"
-})(["display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;margin:auto;top:0;right:0;bottom:0;left:0;"]);
+})(["display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;top:0;right:0;bottom:0;left:0;"]);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return __jsx(Centered, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 18
     },
     __self: this
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 19
     },
     __self: this
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 20
     },
     __self: this
   }, "WebAssembly")), __jsx("div", {
@@ -48,7 +48,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 22
     },
     __self: this
   }, __jsx("div", {
@@ -60,7 +60,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 23
     },
     __self: this
   }, __jsx(Logo, {
@@ -68,7 +68,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     src: "/static/webassembly-logo.svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 32
     },
     __self: this
   })), __jsx("div", {
@@ -80,13 +80,13 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 34
     },
     __self: this
   }, "Webassembly", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 43
     },
     __self: this
   }), " Summit"), __jsx("div", {
@@ -98,7 +98,7 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 45
     },
     __self: this
   }, __jsx("span", {
@@ -108,13 +108,13 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 53
     },
     __self: this
-  }, "February 28-29"), ", 2020", __jsx("br", {
+  }, "February 10"), ", 2020", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 54
     },
     __self: this
   }), __jsx("span", {
@@ -124,10 +124,16 @@ var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 55
     },
     __self: this
-  }, "Google, London"))));
+  }, "Google, Plymouth St 1625", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }), "Mountain View CA"))));
 });
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
   displayName: "summit__Logo",
@@ -137,4 +143,4 @@ var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withCon
 /***/ })
 
 })
-//# sourceMappingURL=summit.js.a249b9db65e4b7b4bd93.hot-update.js.map
+//# sourceMappingURL=summit.js.f32e377dc1704657e2a3.hot-update.js.map
