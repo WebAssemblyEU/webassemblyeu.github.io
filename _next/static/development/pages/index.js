@@ -1,964 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
-/***/ "./components/Article.tsx":
-/*!********************************!*\
-  !*** ./components/Article.tsx ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var browser_detect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! browser-detect */ "./node_modules/browser-detect/dist/browser-detect.es5.js");
-
-var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/components/Article.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var data = _ref.data;
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
-      browser = _useState[0],
-      setBrowser = _useState[1];
-
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    setBrowser(Object(browser_detect__WEBPACK_IMPORTED_MODULE_3__["default"])().name);
-  }, [browser]);
-  return __jsx(ArticleBox, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, __jsx(Subheadline, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, data.author, data.date ? ", ".concat(data.date) : ""), __jsx("a", {
-    target: "_blank",
-    rel: "noopener noreferrer",
-    href: data.link,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, __jsx(Headline, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, data.headline)), data.image && __jsx(Photo, {
-    src: data.image,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }), __jsx(Body, {
-    browser: browser,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, data.body), data.topics && _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(data.topics) && __jsx(Tags, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, data.topics.map(function (topic, index) {
-    return __jsx(Tag, {
-      key: index,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26
-      },
-      __self: this
-    }, topic);
-  })), __jsx(Spacer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }), __jsx(Separator, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }));
-});
-var ArticleBox = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "Article__ArticleBox",
-  componentId: "sc-16wbgzh-0"
-})(["color:rgba(255,255,255,0.9);font-size:18px;font-weight:400;max-width:500px;margin-top:3vw;display:flex;flex-direction:column;overflow:hidden;@media screen and (max-width:600px){width:96%;padding-left:2%;padding-right:2%;}"]);
-var Headline = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2.withConfig({
-  displayName: "Article__Headline",
-  componentId: "sc-16wbgzh-1"
-})(["font-size:calc(26px + (28 - 26) * ((100vw - 300px) / (1600 - 300)));line-height:125%;color:rgba(255,255,255,1);margin-top:0;margin-bottom:15px;font-weight:400;"]);
-var Subheadline = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
-  displayName: "Article__Subheadline",
-  componentId: "sc-16wbgzh-2"
-})(["font-size:14px;color:rgba(255,255,255,0.7);margin-bottom:20px;"]);
-var Body = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
-  displayName: "Article__Body",
-  componentId: "sc-16wbgzh-3"
-})(["line-height:150%;margin-top:30px;margin-bottom:25px;", ""], function (props) {
-  return props.browser && Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["css"])(["letter-spacing:", ";"], props.browser === "safari" ? "-0.5px" : "0px");
-});
-var Separator = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].hr.withConfig({
-  displayName: "Article__Separator",
-  componentId: "sc-16wbgzh-4"
-})(["border:0;height:1px;margin:10px 0;background:rgba(255,255,255,0.1);@media screen and (max-width:600px){margin-bottom:0px;}"]);
-var Photo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
-  displayName: "Article__Photo",
-  componentId: "sc-16wbgzh-5"
-})(["max-width:100%;max-height:160px;object-fit:contain;align-self:flex-start;margin-top:10px;"]);
-var Tag = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "Article__Tag",
-  componentId: "sc-16wbgzh-6"
-})(["color:rgba(255,255,255,0.5);font-size:13px;background-color:rgba(255,255,255,0.02);margin:3px;border:1px solid rgba(255,255,255,0.05);padding:7px 15px;border-radius:20px;&:hover{background-color:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.2);}"]);
-var Tags = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "Article__Tags",
-  componentId: "sc-16wbgzh-7"
-})(["margin-top:25px;display:flex;flex-flow:row wrap;"]);
-var Spacer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "Article__Spacer",
-  componentId: "sc-16wbgzh-8"
-})(["flex:1;min-height:25px;"]);
-
-/***/ }),
-
-/***/ "./components/Footer.tsx":
-/*!*******************************!*\
-  !*** ./components/Footer.tsx ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/components/Footer.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx(Footer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, "About"));
-});
-var Footer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "Footer",
-  componentId: "tcvc4p-0"
-})(["font-size:14px;color:rgba(255,255,255,0.5);padding:25px 0;width:100%;"]);
-
-/***/ }),
-
-/***/ "./components/NavBar.tsx":
-/*!*******************************!*\
-  !*** ./components/NavBar.tsx ***!
-  \*******************************/
-/*! exports provided: default, NavBarArea */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavBarArea", function() { return NavBarArea; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Searchbox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Searchbox */ "./components/Searchbox.tsx");
-/* harmony import */ var _NavButtons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavButtons */ "./components/NavButtons.tsx");
-var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/components/NavBar.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
- // import { withRouter } from "next/router";
-
-
-
-/* 
-import { IoIosOptions as SettingsIcon } from "react-icons/io";
-import {
-  FaSearch as SearchIcon,
-  FaUser as UserIcon,
-  FaTag as TagIcon
-} from "react-icons/fa";
-*/
-
-var labels = ["News", "Overview", "Community", "Roadmap", "Getting Started", "Docs", "Spec", "FAQ"
-/* 
-"Events",
-"Apps",
-"Technology",
-"Demos",
-"Apps",
-"Code"
-*/
-];
-
-var Navbar = function Navbar(_ref) {
-  var onChange = _ref.onChange,
-      experimental = _ref.experimental,
-      value = _ref.value;
-  return __jsx(NavBarArea, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }, __jsx(Column, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, __jsx(Row, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }, __jsx(Logo, {
-    alt: "WebAssembly logo",
-    src: "/static/webassembly-banner.svg",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  })), __jsx(Column, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }), !experimental && __jsx(_Searchbox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    onChange: onChange,
-    value: value,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  })), experimental && __jsx(NavRow, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, __jsx(_NavButtons__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    labels: labels,
-    activeIndex: 0,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Navbar); // withRouter()?
-
-var NavBarArea = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "NavBar__NavBarArea",
-  componentId: "qlxkhe-0"
-})(["width:92%;margin-top:5vw;margin-left:4%;margin-right:4%;"]);
-var Logo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withConfig({
-  displayName: "NavBar__Logo",
-  componentId: "qlxkhe-1"
-})(["max-width:450px;width:90%;margin:5px;"]);
-var Column = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "NavBar__Column",
-  componentId: "qlxkhe-2"
-})(["display:flex;flex:1;flex-direction:column;"]);
-var Row = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "NavBar__Row",
-  componentId: "qlxkhe-3"
-})(["display:flex;flex-flow:row wrap;align-items:center;"]);
-var NavRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "NavBar__NavRow",
-  componentId: "qlxkhe-4"
-})(["display:flex;width:100%;flex-flow:row wrap;align-items:center;justify-content:space-between;"]);
-/* const Spacer = styled.div`
-  display: flex;
-  flex: 0.1;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 10px;
-`; */
-
-/***/ }),
-
-/***/ "./components/NavButtons.tsx":
-/*!***********************************!*\
-  !*** ./components/NavButtons.tsx ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/components/NavButtons.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-var NavButtons = function NavButtons(_ref) {
-  var labels = _ref.labels,
-      activeIndex = _ref.activeIndex;
-  return __jsx(NavButtonsArea, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, labels.map(function (label, index) {
-    return __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      key: label,
-      href: "/".concat(label.toLowerCase()),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }, index === activeIndex ? __jsx(ActiveNavButton, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
-    }, label) : __jsx(NavButton, {
-      onClick: function onClick() {
-        return console.log("click");
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }, label));
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (NavButtons);
-var NavButtonsArea = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "NavButtons__NavButtonsArea",
-  componentId: "sc-1vmc5jl-0"
-})(["display:flex;font-size:14px;color:rgba(255,255,255,0.6);flex-direction:row;align-items:baseline;width:100%;overflow-x:scroll;overflow-y:hidden;-webkit-overflow-scrolling:touch;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.1);"]);
-var ActiveNavButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a.withConfig({
-  displayName: "NavButtons__ActiveNavButton",
-  componentId: "sc-1vmc5jl-1"
-})(["display:flex;justify-content:center;margin-right:1.5vw;font-size:15px;letter-spacing:3px;text-transform:uppercase;padding:23px 15px;color:rgba(255,255,255,1);border-bottom:2px solid rgba(255,255,255,1);"]);
-var NavButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a.withConfig({
-  displayName: "NavButtons__NavButton",
-  componentId: "sc-1vmc5jl-2"
-})(["margin-right:1.5vw;padding:23px 15px;letter-spacing:3px;text-transform:uppercase;border-bottom:2px solid rgba(255,255,255,0);&:hover{color:rgba(255,255,255,1);border-bottom:2px solid rgba(255,255,255,1);}"]);
-/* const Button = styled.div`
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 16px;
-  background-color: rgba(255, 255, 255, 0);
-  border-style: solid;
-  border-width: 2px;
-  border-color: #6152e7;
-  margin-right: 10px;
-  padding: 9px;
-  padding-left: 10px;
-  padding-right: 10px;
-  min-width: 50px;
-  border-radius: 8px;
-  text-align: center;
-`;
-
-const Buttons = styled.div`
-  display: flex;
-  flex: 1;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-`; */
-
-/***/ }),
-
-/***/ "./components/Searchbox.tsx":
-/*!**********************************!*\
-  !*** ./components/Searchbox.tsx ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
-/* harmony import */ var react_spring__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-spring */ "./node_modules/react-spring/web.js");
-/* harmony import */ var react_icons_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/md */ "./node_modules/react-icons/md/index.esm.js");
-var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/components/Searchbox.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-var placeholder = "";
-
-var SearchBox = function SearchBox(_ref) {
-  var value = _ref.value,
-      _onChange = _ref.onChange,
-      _onFocus = _ref.onFocus,
-      _onBlur = _ref.onBlur;
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      focus = _useState[0],
-      setFocus = _useState[1];
-
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      hover = _useState2[0],
-      setHover = _useState2[1];
-
-  var inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  console.log(focus, hover);
-  /* const props = useSpring({
-    maxWidth: focus || hover ? 1000 : 350,
-    config: { tension: 500 }
-  }); */
-
-  return __jsx(SearchBoxArea, {
-    onMouseEnter: function onMouseEnter() {
-      setHover(true);
-      setFocus(true);
-    },
-    onMouseLeave: function onMouseLeave() {
-      setHover(false);
-      setFocus(false);
-    },
-    onClick: function onClick() {
-      setFocus(true);
-      _onFocus && _onFocus();
-      inputRef.current.focus();
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaSearch"], {
-    size: 22,
-    color: "rgba(255, 255, 255, 0.5)",
-    style: {
-      margin: 8
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }), __jsx("input", {
-    style: {
-      padding: "6px",
-      display: "flex",
-      flex: 1,
-      borderRadius: "10px",
-      backgroundColor: "transparent",
-      borderStyle: "solid",
-      borderColor: "rgba(255, 255, 255, 0.05)",
-      borderWidth: "0px",
-      flexFlow: "row wrap",
-      margin: "2px",
-      outline: "none",
-      fontSize: "18px",
-      color: "white",
-      caretColor: "white",
-      overflow: "hidden"
-    },
-    ref: inputRef,
-    type: "text",
-    autoCorrect: "off",
-    placeholder: placeholder,
-    onChange: function onChange(event) {
-      return _onChange(event.target.value);
-    },
-    value: value,
-    onKeyDown: function onKeyDown(e) {
-      if (e.key === "Enter") {
-        e.target.blur();
-      }
-    },
-    onMouseOver: function onMouseOver(e) {
-      e.target.focus();
-    },
-    onFocus: function onFocus() {
-      setFocus(true);
-      _onFocus && _onFocus();
-    },
-    onBlur: function onBlur() {
-      setFocus(false);
-      _onBlur && _onBlur();
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }), value && __jsx(react_icons_md__WEBPACK_IMPORTED_MODULE_4__["MdClear"], {
-    size: 22,
-    color: "rgba(255,255,255,0.5)",
-    style: {
-      marginRight: 10
-    },
-    onClick: function onClick() {
-      return _onChange("");
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 103
-    },
-    __self: this
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (SearchBox);
-var SearchBoxArea = Object(react_spring__WEBPACK_IMPORTED_MODULE_3__["animated"])(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "Searchbox__SearchBoxArea",
-  componentId: "sc-1u5l641-0"
-})(["padding:6px 10px;display:flex;flex:1 1 450px;border-radius:25px;background-color:rgba(255,255,255,0.09);border-style:solid;border-color:rgba(255,255,255,0.05);border-width:0;flex-flow:row wrap;align-items:center;flex-wrap:nowrap;max-width:1000px;margin:4.5vw 0;"])); //   const CategoryArea = animated(styled.div`
-//   border-radius: 15px;
-//   border-color: rgba(255, 255, 255, 0);
-//   /* background-color: hsla(246, 76%, 61%, 0.8); */
-//   border-style: solid;
-//   /* box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1); */
-//   border-width: 0px;
-//   flex-flow: row wrap;
-//   display: flex;
-//   padding: 0 20px;
-//   margin: 0 0 0 15px;
-//   height: 38px;
-//   align-items: center;
-//   flex-wrap: nowrap;
-//   max-width: 1000px;
-//   overflow: hidden;
-// `);
-// const CategoryType = animated(styled.div`
-//   border-color: rgba(255, 255, 255, 0);
-//   background-color: transparent;
-//   border-style: solid;
-//   /* box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1); */
-//   color: black;
-//   border-width: 0px;
-//   flex-flow: row wrap;
-//   display: flex;
-//   padding: 0 10px 0 20px;
-//   height: 100%;
-//   margin-left: 0px;
-//   color: white;
-//   align-items: center;
-//   flex-wrap: nowrap;
-//   max-width: 1000px;
-//   &:hover {
-//     background-color: rgba(255, 255, 255, 0.1);
-//   }
-// `);
-// const ValueType = animated(styled.div`
-//   border-color: rgba(255, 255, 255, 0.1);
-//   background-color: transparent;
-//   /* border-left: 1px; */
-//   border-style: solid;
-//   border-width: 0;
-//   /* box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1); */
-//   flex-flow: row wrap;
-//   display: flex;
-//   padding: 0 20px 0 10px;
-//   height: 100%;
-//   margin-right: 0px;
-//   color: white;
-//   align-items: center;
-//   flex-wrap: nowrap;
-//   max-width: 1000px;
-//   &:hover {
-//     background-color: rgba(255, 255, 255, 0.1);
-//   }
-// `);
-
-/***/ }),
-
-/***/ "./components/index.ts":
-/*!*****************************!*\
-  !*** ./components/index.ts ***!
-  \*****************************/
-/*! exports provided: Article, NavBar, Footer */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Article__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Article */ "./components/Article.tsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Article", function() { return _Article__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./components/NavBar.tsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NavBar", function() { return _NavBar__WEBPACK_IMPORTED_MODULE_1__["default"]; });
-
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Footer.tsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return _Footer__WEBPACK_IMPORTED_MODULE_2__["default"]; });
-
-
-
-
-
-/***/ }),
-
-/***/ "./data/articles.ts":
-/*!**************************!*\
-  !*** ./data/articles.ts ***!
-  \**************************/
-/*! exports provided: links, articles */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "links", function() { return links; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "articles", function() { return articles; });
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/index.js");
-/* harmony import */ var object_hash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! object-hash */ "./node_modules/object-hash/dist/object_hash.js");
-/* harmony import */ var object_hash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(object_hash__WEBPACK_IMPORTED_MODULE_1__);
-
-
-var links = [{
-  title: "Twiggy is a code size profiler for Rust",
-  link: "https://github.com/rustwasm/twiggy",
-  topics: ["Rust", "profiler"]
-}, {
-  title: "This very simple example shows usage of WebAssembly in Webpack.",
-  link: "https://github.com/webpack/webpack/tree/master/examples/wasm-simple",
-  topics: ["Webpack", "WebAssembly"]
-}, {
-  title: "Understanding WebAssembly text format",
-  link: "https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format",
-  topics: ["WebAssembly"]
-}, {
-  title: "Walt in 5 Minutes",
-  link: "https://github.com/ballercat/walt/wiki/Walt-In-5-Minutes",
-  topics: ["Walt", "WebAssembly", "Typescript"]
-}, {
-  title: "Rust to WebAssembly Hello World",
-  link: "https://rustwasm.github.io/book/hello-world.html",
-  topics: ["Rust", "WebAssembly", "hello world"]
-}, {
-  title: "Rust WASM Book: Shrinking .wasm Size",
-  link: "https://rustwasm.github.io/book/game-of-life/code-size.html",
-  topics: ["Rust", "WebAssembly"]
-}, {
-  title: "WebAssembly Reference Manual",
-  link: "https://github.com/sunfishcode/wasm-reference-manual/blob/master/WebAssembly.md",
-  topics: ["WebAssembly", "documentation"]
-}, {
-  title: "Introduction to WebAssembly",
-  link: "https://rsms.me/wasm-intro",
-  topics: ["WebAssembly", "introduction"]
-}, {
-  title: "Awesome Webassembly System Interface (WASI)",
-  link: "https://github.com/wasmerio/awesome-wasi",
-  topics: ["WebAssembly", "WASI"]
-}];
-var articles = [{
-  headline: "Publishing compiled Rust modules as WebAssembly binaries on NPM",
-  body: "wasm-pack is a tool for assembling and packaging Rust crates that target WebAssembly. These packages can be published to the npm Registry and used alongside other packages. This means you can use them side-by-side with JS and other packages, and in many kind of applications.",
-  image: "https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/04/wasm-pack-01.png",
-  link: "https://hacks.mozilla.org/2018/04/hello-wasm-pack/",
-  author: "Ashley Williams",
-  date: "April 18, 2018",
-  icon: "Rust_programming_language_black_logo.svg",
-  topics: ["WebAssembly", "NPM", "Rust", "Javascript"]
-}, {
-  headline: "Google Earth switching to WebAssembly",
-  body: "Google Earth is switching from Native Client to WebAssembly",
-  author: "Google",
-  date: "October 24, 2017",
-  image: "https://cdn-images-1.medium.com/max/800/0*YxeGMxX6L0I7XvXt.",
-  link: "https://medium.com/google-earth/earth-on-web-the-road-to-cross-browser-7338e0f46278",
-  topics: ["WebAssembly", "Google Earth", "Web App"]
-}, {
-  headline: "WebAssembly support now shipping in all major browsers",
-  date: "November 13, 2017",
-  link: "https://blog.mozilla.org/blog/2017/11/13/webassembly-in-browsers/",
-  body: "Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge now all support the WebAssembly MVP",
-  image: "../static/browser-support.png",
-  author: "Mozilla",
-  topics: ["Chrome", "Edge", "Safari", "Firefox", "WebAssembly"]
-}, {
-  headline: "WebAssembly Meetup at Google Munich",
-  date: "June 29, 2018",
-  author: "WebAssembly Munich Meetup",
-  location: "Google, Munich, Germany",
-  link: "https://www.meetup.com/de-DE/WebAssembly/",
-  body: "First WebAssembly meetup in Germany with talks from the Google WebAssembly team will take place on July 17 at Google's Munich head quarter. Talks will be about going from C++ or Assemblyscript to WebAssembly and how Chrome processes WebAssembly",
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Google_Entwicklungszentrum_Arnulfpark_Muenchen-4.jpg/640px-Google_Entwicklungszentrum_Arnulfpark_Muenchen-4.jpg",
-  topics: ["Google", "WebAssembly", "Meetup"]
-}, {
-  headline: "Dropbox's new compression algorithms written in Rust",
-  date: "June 19, 2018",
-  author: "Dropbox",
-  link: "https://blogs.dropbox.com/tech/2018/06/building-better-compression-together-with-divans/",
-  body: "DivANS is written in the Rust programming language, since Rust has guarantees about safety, security, and determinism in the safe subset of the language. Rust can also be as fast as hand-tuned C code and doesn’t need a garbage collector. Rust programs embed well in any programming language that support a C foreign function interface (FFI) and even allow runtime selection of the memory allocator through that C FFI. These properties make it easy to embed the DivANS codec in a webpage with WASM.",
-  topics: ["Rust", "WebAssembly"],
-  image: "https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/dropbox-logo@2x.jpg"
-}, {
-  headline: "AutoCAD Web App presented at Google IO 2018",
-  date: "May 28, 2018",
-  author: "Google",
-  link: "http://blogs.autodesk.com/autocad/autocad-web-app-google-io-2018/",
-  body: "Autodesk has ported AutoCAD to the browser: The AutoCAD Web App presented at Google I/O 2018 runs on WebAssembly. The AutoCAD team took a 35 year old code base...and got it to compile directly in a browser using WebAssembly.... So now the power of AutoCAD is just a link away.",
-  image: "https://pbs.twimg.com/media/DctE099V0AEm14h.jpg:medium",
-  topics: ["AutoCAD", "Web App", "WebAssembly"]
-}, {
-  headline: "Sneak Peek at WebAssembly Studio",
-  date: "April 11, 2018",
-  author: "Michael Bebenita, Mozilla",
-  link: "https://hacks.mozilla.org/2018/04/sneak-peek-at-webassembly-studio/",
-  body: "WebAssembly.Studio is an online IDE (integrated development environment) that helps you learn and teach others about WebAssembly. It’s also a Swiss Army knife that comes in handy whenever working with WebAssembly.",
-  image: "https://hacks.mozilla.org/files/2018/04/mainwasm1.png",
-  topics: ["Integrated Development Environment", "WebAssembly"]
-}, {
-  headline: "Baby’s First Rust + WebAssembly module: Say hi to JSConf EU!",
-  date: "June 2, 2018",
-  author: "Lin Clark",
-  body: "A demo hello world project for JSConf EU demonstrating writing a WebAssembly module in Rust",
-  link: "https://hacks.mozilla.org/2018/06/babys-first-rustwebassembly-module-say-hi-to-jsconf-eu/",
-  topics: ["WebAssembly", "Rust", "hello world"],
-  image: "https://hacks.mozilla.org/files/2018/03/01_rust_loves_js-768x309.png"
-}, {
-  headline: "PSPDFKit: A Real-World WebAssembly Benchmark",
-  link: "https://pspdfkit.com/blog/2018/a-real-world-webassembly-benchmark/",
-  date: "July, 7, 2018",
-  author: "G. Gurgone, P. Spiess",
-  image: "https://pspdfkit.com/images/blog/2018/webassembly-benchmark/results-macOS.png",
-  body: "Currently, only in Firefox the WebAssembly performance of PSPDFKit is significantly better than Javascript, while others browsers currently do not profit from WebAssembly yet. In Safari and Edge the WebAssembly version runs significantly slower than the Javascript version.",
-  topics: ["WebAssembly", "benchmark", "PSPDFKit", "PDF", "Firefox", "Chrome", "Edge", "Safari"]
-}, {
-  headline: "Vim editor ported to WebAssembly",
-  link: "https://rhysd.github.io/vim.wasm/",
-  date: "June 9, 2018",
-  author: "Linda",
-  body: "This project is an experimental fork of Vim editor by @rhysd to compile it into WebAssembly using emscripten and binaryen.",
-  topics: ["vim", "WebAssembly"],
-  image: "https://github.com/rhysd/vim.wasm/raw/wasm/wasm-readme-images/main-screen.png"
-}, {
-  author: "Devon Govett",
-  date: "January 23, 2018",
-  headline: "Parcel v1.5.0 released: Source Maps, WebAssembly, Rust, and more!",
-  body: "Parcel v1.5.0 is a HUGE release. The highlights include: WebAssembly support — an emerging technology, this will become more important in the future and enable a diversity of languages on the web and native-level performance. Parcel makes it super easy to get started — we handle many of the details for you with zero configuration. Rust → WebAssembly support — continuing on the above, the first language to support compiling to WebAssembly out of the box is Rust! Now you can import a .rs file just like you can .js!",
-  link: "https://medium.com/@devongovett/parcel-v1-5-0-released-source-maps-webassembly-rust-and-more-3a6385e43b95",
-  topics: ["WebAssembly", "Parcel", "Rust"],
-  image: "https://cdn-images-1.medium.com/max/1600/1*Gjhk6qvPM5zAy1iPPS1ttg.png"
-}, {
-  author: "Mathias Bynens, Google V8 team",
-  date: "April 1, 2018",
-  body: "When working with WebAssembly, you often want to download a module, compile it, instantiate it, and then use whatever it exports in JavaScript. This post starts off with a common but suboptimal code snippet doing exactly that, discusses several possible optimizations, and eventually shows the simplest, most efficient way of running WebAssembly from JavaScript.",
-  headline: "Loading WebAssembly modules efficiently",
-  link: "https://developers.google.com/web/updates/2018/04/loading-wasm",
-  topics: ["WebAssembly", "V8"],
-  image: "https://developers.google.com/web/updates/images/2018/04/loading-wasm/streaming.png"
-}, {
-  author: "Sean T. Larkin",
-  date: "July 31, 2017",
-  headline: "Webpack implementing first-class support for WebAssembly",
-  body: "At webpack, we would like to shift our focus to supporting more module types. One of these module types we would like to treat as a first-class citizen is WebAssembly. WebAssembly is described by Mozilla as …an emerging standard whose goal is to define a safe, portable, size- and load-time efficient binary compiler target which offers near-native performance — a virtual CPU for the Web.",
-  link: "https://medium.com/webpack/webpack-awarded-125-000-from-moss-program-f63eeaaf4e15",
-  image: "https://raw.githubusercontent.com/webpack/media/master/logo/logo-on-white-bg.png",
-  topics: ["WebAssembly", "Webpack"]
-}, {
-  author: "Lin Clark",
-  headline: "Creating and working with WebAssembly modules",
-  date: "February 28, 2018",
-  body: "WebAssembly modules define functions that can be used from JavaScript. So just like you download a module like lodash from npm today and call functions that are part of its API, you will be able to download WebAssembly modules in the future. So let’s see how we can create WebAssembly modules, and then how we can use them from JavaScript.",
-  link: "https://hacks.mozilla.org/2017/02/creating-and-working-with-webassembly-modules/",
-  image: "https://hacks.mozilla.org/files/2017/02/04-01-langs09-768x469.png",
-  topics: ["WebAssembly"]
-}, {
-  headline: "Six different 8-bit emulators compiled to WebAssembly",
-  date: "July 11, 2018",
-  author: "Andre Weissflog",
-  body: "Six different 8-bit emulators (including the famous Commodore C64), all written in C and compiled to WebAssembly.",
-  link: "https://floooh.github.io/tiny8bit/",
-  topics: ["WebAssembly", "emulator", "C64"],
-  image: "https://pbs.twimg.com/media/Dhzr7MrWAAALb2W.jpg:large"
-}, {
-  headline: "Where is WebAssembly now and what’s next?",
-  link: "https://hacks.mozilla.org/2017/02/where-is-webassembly-now-and-whats-next/",
-  date: "February 28, 2017",
-  body: "On February 28, the four major browsers announced their consensus that the MVP of WebAssembly is complete. This provides a stable initial version that browsers can start shipping. This provides a stable core that browsers can ship. This core doesn’t contain all of the features that the community group is planning, but it does provide enough to make WebAssembly fast and usable.",
-  topics: ["WebAssembly", "MVP", "Edge", "Chrome", "Safari", "Firefox"],
-  image: "https://hacks.mozilla.org/files/2017/02/logo_party01-768x259.png"
-}, {
-  headline: "Introducing inNative: Run WebAssembly Outside The Sandbox at 95% Native Speed",
-  link: "https://innative.dev/news/introducing-innative/",
-  author: "Eric McClure",
-  date: "May 17, 2019",
-  body: "Many people are excited about WebAssembly, which lets you use languages other than JavaScript on the web. With WebAssembly, you can run C, C++, Rust, Zig, Go, or pretty much anything that compiles to LLVM in a sandbox running inside your web browser. This has performance costs, but many people are working on highly optimized JIT compilers designed to minimize these costs as much as possible. I’m not interested in that. I’m interested in a completely different question: How fast can WebAssembly go outside the sandbox?",
-  topics: ["WebAssembly", "sandbox", "native", "universal binaries"],
-  image: "https://innative.dev/img/innative.png"
-}, {
-  headline: "Assemblyscript: Support for automatic memory management on the horizon",
-  link: "https://github.com/AssemblyScript/assemblyscript/pull/592",
-  date: "May 24, 2019",
-  author: "AssemblyScript",
-  body: "The Assemblyscript team is working on automatic memory management based on automatic reference counting (ARC) as native Webassembly Garbage Collection runtime is not yet on the horizon. ARC is a mostly compile time approach to memory management as in Swift.",
-  topics: ["WebAssembly", "memory management", "Typescript", "AssemblyScript"],
-  image: "https://github.com/AssemblyScript/assemblyscript/raw/master/media/icon.png"
-}, {
-  headline: "eBay's Webassembly barcode scanner",
-  link: "https://www.ebayinc.com/stories/blogs/tech/webassembly-at-ebay-a-real-world-use-case/?utm_source=twitter&utm_medium=Social&utm_campaign=AddThisWidget#.XOhbJgZV6Nw.twitter",
-  date: "May 22, 2019",
-  author: "Pranav Jha and Senthil Padmanabhan",
-  body: "From the time it was announced, WebAssembly caused a huge buzz in the front-end world. The web community readily embraced the idea of taking code written in programming languages other than JavaScript and running that code in the browser. Above all WebAssembly consistently guarantees native speeds much faster than JavaScript. At eBay, we were no different.",
-  topics: ["WebAssembly", "application", "eBay", "computer vision"],
-  image: "https://static.ebayinc.com/static/theme/images/logo.svg?v=1559154993"
-}, {
-  headline: "Standardizing WASI: A system interface to run WebAssembly outside the web",
-  author: "Lin Clark",
-  date: "March 27, 2019",
-  body: "Today, we announce the start of a new standardization effort — WASI, the WebAssembly system interface. Why: Developers are starting to push WebAssembly beyond the browser, because it provides a fast, scalable, secure way to run the same code across all machines. But we don’t yet have a solid foundation to build upon. Code outside of a browser needs a way to talk to the system — a system interface. And the WebAssembly platform doesn’t have that yet.",
-  topics: ["WebAssembly", "WASI"],
-  link: "https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/",
-  image: "https://hacks.mozilla.org/files/2019/03/05-01-wasi-1-768x644.png"
-}, {
-  headline: "Next-Generation 3D Graphics on the Web",
-  author: "Ricardo Cabello (Mr. Doob), Corentin Wallez",
-  date: "May 9, 2019",
-  body: "This talk will cover the latest updates for adding 3D to your web site. You'll learn how to use <model-viewer> and new features for rendering, AR, and interactivity. You'll also see some phenomenal sites created with three.js. Then you'll get an overview of the WebGPU API that will provide modern features such as “GPU compute” as well as lower overhead access to GPU hardware and better, more predictable performance. Expect performance gains in Tensorflow.js up to 10x.",
-  topics: ["WebGPU", "WebIDL"],
-  link: "https://youtu.be/K2JzIUIHIhc",
-  image: "https://storage.googleapis.com/io-19-assets/images/global/hashtag.gif"
-}, {
-  headline: "WebAssembly Implicit caching in V8 release 7.5",
-  author: "Google V8 team",
-  date: "May 16, 2019",
-  body: "We are planning to roll out implicit caching of WebAssembly compilation artifacts in Chrome 75. This means users that visit the same page a second time don’t need to compile the already-seen WebAssembly modules. Instead they are loaded from the cache. This works similarly to Chromium’s JavaScript code-cache. In case you want to use a similar feature in your V8 embedding, please take inspiration from Chromium’s implementation.",
-  topics: ["WebAssembly", "V8"],
-  link: "https://v8.dev/blog/v8-release-75",
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/V8_JavaScript_engine_logo_2.svg/1920px-V8_JavaScript_engine_logo_2.svg.png"
-}, {
-  headline: "Compiling Swift to WebAssembly",
-  author: "SwiftWasm",
-  date: "May 10, 2019",
-  body: "The open source project SwiftWasm announced: \"SwiftWasm compiles your Swift code to WebAssembly. Many features in Swift aren't working on WebAssembly yet. We're working on integrating our patches into the official Swift compiler.\" Swift is a programming language invented by the LLVM author Chris Lattner and feature an automatic reference counting (ARC) approach resolving most of the automatic memory management at compile time, and an easy to learn syntax, an interpreter and fast compiled code.",
-  topics: ["WebAssembly", "Swift"],
-  link: "https://swiftwasm.org/",
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Swift_logo_with_text.svg/320px-Swift_logo_with_text.svg.png"
-}, {
-  headline: "Entropic, a new decentralized package manager announced",
-  author: "C J Silverio",
-  date: "June 3, 2019",
-  body: "Ex NPM chief technology officer Silverio announced a federated, decentral package manager at JSConf EU yesterday in response to the problems of a venture capitalist backed central registry. Silverio will meet with Mozilla to learn about the needs for Webassembly support. Entropic registries will also be able to run on the edge of CDNs like Cloudflare workers.",
-  topics: ["WebAssembly", "Entropic"],
-  link: "https://github.com/entropic-dev/entropic",
-  image: "https://pbs.twimg.com/media/D8IO_JBWwAASplG.jpg"
-}, {
-  headline: "Compiling C / C++ to WebAssembly without Emscripten",
-  author: "Surma",
-  date: "May 28, 2019",
-  body: "Emscripten uses the clang C/C++ compiler based on LLVM and emulates APIs such as OpenGL and POSIX needed to port 3D games to the web. This article by Surma discusses a lean approach that does not target compiling existing applications to WebAssembly and thus does not bring all the weight for legacy support.",
-  topics: ["WebAssembly", "LLVM", "C", "C++"],
-  link: "https://dassur.ma/things/c-to-webassembly/",
-  image: "https://llvm.org/img/DragonMedium.png"
-}, {
-  headline: "Announcing Lucet: Fastly’s native WebAssembly compiler and runtime",
-  author: "Pat Hickey",
-  date: "March 28, 2019",
-  body: "Fastly open sources Lucet, its native WebAssembly compiler and runtime, designed to take WebAssembly beyond the browser, and build a platform for faster, safer execution on Fastly’s edge cloud. We want to enable our customers to go beyond Fastly VCL and move even more logic to the edge, and use any language they choose. Lucet is the engine behind Terrarium, our experimental platform for edge computation using WebAssembly. Soon, we will make it available on Fastly’s edge cloud as well.",
-  topics: ["WebAssembly", "Fastly", "standalone runtime", "CDN", "edge", "cloud"],
-  link: "https://www.fastly.com/blog/announcing-lucet-fastly-native-webassembly-compiler-runtime",
-  image: "https://www.fastly.com/assets/logo-bb62411dfd9737caea27fdab1485bd7d2b397f8f84ec8a1f773393a877a4bf6a.svg"
-}, {
-  headline: "TensorFlow developers looking into WebAssembly and WebGPU support",
-  author: "Smilkov et al.",
-  date: "February 4, 2019",
-  body: "Two new web standards, WebAssembly and WebGPU, both have potential to improve TensorFlow.js performance. WebGPU is an emerging standard to express general purpose parallel computation on the GPU, enabling more optimised linear algebra kernels than those the WebGL backend can support today.",
-  topics: ["WebAssembly", "WebGPU", "Tensorflow"],
-  link: "https://blog.acolyer.org/2019/02/04/tensorflow-js-machine-learning-for-the-web-and-beyond/",
-  image: "https://js.tensorflow.org/images/lockup.svg"
-}, {
-  headline: "Autodesk releases AutoCAD web app for Firefox",
-  author: "Autodesk",
-  date: "June 8, 2019",
-  body: "Autodesk today announced Firefox support for the AutoCAD Web App. AutoCAD is based on a codebase written decades ago. The Webassembly port demonstrates the potential of Webassembly to overcome barriers separating previously fragmented areas of software development divided by operating system, programming languages and frameworks.",
-  topics: ["WebAssembly", "Autodesk", "AutoCAD"],
-  link: "https://www.autodesk.com/products/autocad-web-app/overview?linkId=68719474",
-  image: "https://damassets.autodesk.net/content/dam/autodesk/www/products/autocad-web-app/overview-page/benefits/cohesive-autocad-experience-thumb-600x300.jpg"
-}, {
-  headline: "AssemblyScript now with automatic memory management",
-  author: "AssemblyScript",
-  date: "June 5, 2019",
-  body: "AssemblyScript adds support for automatic memory management. The solution is Automatic Reference Counting (ARC) like in Swift. For references without circular depdendencies this is done at compile time without the need for a  Garbage Collection runtime. This solution is more than a stopgap for the upcoming Garbage Collection proposal, but it may also prove to have its benefits in terms of predictabile performance.",
-  topics: ["WebAssembly", "AssemblyScript", "memory management", "ARC"],
-  link: "https://twitter.com/AssemblyScript/status/1136387616725712899",
-  image: "https://github.com/AssemblyScript/assemblyscript/raw/master/media/icon.png"
-}, {
-  headline: "Plot to steal cryptocurrency foiled by the npm security team",
-  author: "NPM",
-  date: "June 5, 2019",
-  body: '"Yesterday, the npm, Inc. security team, in collaboration with Komodo, helped protect over $13 million USD in cryptocurrency assets as we found and responded to a malware threat targeting the users of a cryptocurrency wallet called Agama. This attack focused on getting a malicious package into the build chain for Agama and stealing the wallet seeds and other login passphrases used within the application." This is a fundamental problem inherent to the Node.js ecosystem. Webassembly and WASI\'s module sandbox could be a solution to reduce the surface of this kind of attack vector.',
-  topics: ["Node.js", "NPM", "security", "module security", "package security"],
-  link: "https://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm",
-  image: "https://static.npmjs.com/images/logo.svg"
-}].sort(function (a, b) {
-  if (Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["getTime"])(new Date(b.date)) - Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["getTime"])(new Date(a.date)) !== 0) {
-    return Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["getTime"])(new Date(b.date)) - Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["getTime"])(new Date(a.date));
-  } else {
-    return object_hash__WEBPACK_IMPORTED_MODULE_1___default()(b).localeCompare(object_hash__WEBPACK_IMPORTED_MODULE_1___default()(a));
-  }
-});
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
@@ -23570,20 +22611,20 @@ function index (origin) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fpages%2Findex.tsx!./":
-/*!********************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fpages%2Findex.tsx ***!
-  \********************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fsrc%2Fpages%2Findex.tsx!./":
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fsrc%2Fpages%2Findex.tsx ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
     (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var mod = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
+      var mod = __webpack_require__(/*! ./src/pages/index.tsx */ "./src/pages/index.tsx")
       if(true) {
-        module.hot.accept(/*! ./pages/index.tsx */ "./pages/index.tsx", function() {
+        module.hot.accept(/*! ./src/pages/index.tsx */ "./src/pages/index.tsx", function() {
           if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
+          var updatedPage = __webpack_require__(/*! ./src/pages/index.tsx */ "./src/pages/index.tsx")
           next.router.update("/", updatedPage)
         })
       }
@@ -47706,11 +46747,970 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.tsx":
-/*!*************************!*\
-  !*** ./pages/index.tsx ***!
-  \*************************/
-/*! exports provided: findWord, default, Centered, Articles, ArticleColumns, ContentArea */
+/***/ "./src/components/Article.tsx":
+/*!************************************!*\
+  !*** ./src/components/Article.tsx ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var browser_detect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! browser-detect */ "./node_modules/browser-detect/dist/browser-detect.es5.js");
+
+var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/src/components/Article.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var data = _ref.data;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
+      browser = _useState[0],
+      setBrowser = _useState[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    setBrowser(Object(browser_detect__WEBPACK_IMPORTED_MODULE_3__["default"])().name);
+  }, [browser]);
+  return __jsx(ArticleBox, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, __jsx(Subheadline, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, data.author, data.date ? ", ".concat(data.date) : ""), __jsx("a", {
+    target: "_blank",
+    rel: "noopener noreferrer",
+    href: data.link,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, __jsx(Headline, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, data.headline)), data.image && __jsx(Photo, {
+    src: data.image,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }), __jsx(Body, {
+    browser: browser,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, data.body), data.topics && _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(data.topics) && __jsx(Tags, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, data.topics.map(function (topic, index) {
+    return __jsx(Tag, {
+      key: index,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, topic);
+  })), __jsx(Spacer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }), __jsx(Separator, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }));
+});
+var ArticleBox = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Article__ArticleBox",
+  componentId: "sc-19sr3f9-0"
+})(["color:rgba(255,255,255,0.9);font-size:18px;font-weight:400;max-width:500px;margin-top:3vw;display:flex;flex-direction:column;overflow:hidden;@media screen and (max-width:600px){width:96%;padding-left:2%;padding-right:2%;}"]);
+var Headline = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2.withConfig({
+  displayName: "Article__Headline",
+  componentId: "sc-19sr3f9-1"
+})(["font-size:calc(26px + (28 - 26) * ((100vw - 300px) / (1600 - 300)));line-height:125%;color:rgba(255,255,255,1);margin-top:0;margin-bottom:15px;font-weight:400;"]);
+var Subheadline = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
+  displayName: "Article__Subheadline",
+  componentId: "sc-19sr3f9-2"
+})(["font-size:14px;color:rgba(255,255,255,0.7);margin-bottom:20px;"]);
+var Body = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
+  displayName: "Article__Body",
+  componentId: "sc-19sr3f9-3"
+})(["line-height:150%;margin-top:30px;margin-bottom:25px;", ""], function (props) {
+  return props.browser && Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["css"])(["letter-spacing:", ";"], props.browser === "safari" ? "-0.5px" : "0px");
+});
+var Separator = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].hr.withConfig({
+  displayName: "Article__Separator",
+  componentId: "sc-19sr3f9-4"
+})(["border:0;height:1px;margin:10px 0;background:rgba(255,255,255,0.1);@media screen and (max-width:600px){margin-bottom:0px;}"]);
+var Photo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
+  displayName: "Article__Photo",
+  componentId: "sc-19sr3f9-5"
+})(["max-width:100%;max-height:160px;object-fit:contain;align-self:flex-start;margin-top:10px;"]);
+var Tag = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Article__Tag",
+  componentId: "sc-19sr3f9-6"
+})(["color:rgba(255,255,255,0.5);font-size:13px;background-color:rgba(255,255,255,0.02);margin:3px;border:1px solid rgba(255,255,255,0.05);padding:7px 15px;border-radius:20px;&:hover{background-color:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.2);}"]);
+var Tags = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Article__Tags",
+  componentId: "sc-19sr3f9-7"
+})(["margin-top:25px;display:flex;flex-flow:row wrap;"]);
+var Spacer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Article__Spacer",
+  componentId: "sc-19sr3f9-8"
+})(["flex:1;min-height:25px;"]);
+
+/***/ }),
+
+/***/ "./src/components/Footer.tsx":
+/*!***********************************!*\
+  !*** ./src/components/Footer.tsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/src/components/Footer.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, __jsx(Footer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "About"));
+});
+var Footer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Footer",
+  componentId: "sc-1ud1p5o-0"
+})(["font-size:14px;color:rgba(255,255,255,0.5);padding:25px 0;width:100%;"]);
+
+/***/ }),
+
+/***/ "./src/components/NavBar.tsx":
+/*!***********************************!*\
+  !*** ./src/components/NavBar.tsx ***!
+  \***********************************/
+/*! exports provided: default, NavBarArea */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavBarArea", function() { return NavBarArea; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Searchbox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Searchbox */ "./src/components/Searchbox.tsx");
+/* harmony import */ var _NavButtons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavButtons */ "./src/components/NavButtons.tsx");
+var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/src/components/NavBar.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+ // import { withRouter } from "next/router";
+
+
+
+/* 
+import { IoIosOptions as SettingsIcon } from "react-icons/io";
+import {
+  FaSearch as SearchIcon,
+  FaUser as UserIcon,
+  FaTag as TagIcon
+} from "react-icons/fa";
+*/
+
+var labels = ["News", "Overview", "Community", "Roadmap", "Getting Started", "Docs", "Spec", "FAQ"
+/* 
+"Events",
+"Apps",
+"Technology",
+"Demos",
+"Apps",
+"Code"
+*/
+];
+
+var Navbar = function Navbar(_ref) {
+  var onChange = _ref.onChange,
+      experimental = _ref.experimental,
+      value = _ref.value;
+  return __jsx(NavBarArea, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, __jsx(Column, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, __jsx(Row, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, __jsx(Logo, {
+    alt: "WebAssembly logo",
+    src: "/static/webassembly-banner.svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  })), __jsx(Column, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }), !experimental && __jsx(_Searchbox__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    onChange: onChange,
+    value: value,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  })), experimental && __jsx(NavRow, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, __jsx(_NavButtons__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    labels: labels,
+    activeIndex: 0,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Navbar); // withRouter()?
+
+var NavBarArea = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "NavBar__NavBarArea",
+  componentId: "gke36u-0"
+})(["width:92%;margin-top:5vw;margin-left:4%;margin-right:4%;"]);
+var Logo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withConfig({
+  displayName: "NavBar__Logo",
+  componentId: "gke36u-1"
+})(["max-width:450px;width:90%;margin:5px;"]);
+var Column = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "NavBar__Column",
+  componentId: "gke36u-2"
+})(["display:flex;flex:1;flex-direction:column;"]);
+var Row = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "NavBar__Row",
+  componentId: "gke36u-3"
+})(["display:flex;flex-flow:row wrap;align-items:center;"]);
+var NavRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "NavBar__NavRow",
+  componentId: "gke36u-4"
+})(["display:flex;width:100%;flex-flow:row wrap;align-items:center;justify-content:space-between;"]);
+/* const Spacer = styled.div`
+  display: flex;
+  flex: 0.1;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
+`; */
+
+/***/ }),
+
+/***/ "./src/components/NavButtons.tsx":
+/*!***************************************!*\
+  !*** ./src/components/NavButtons.tsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/src/components/NavButtons.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+var NavButtons = function NavButtons(_ref) {
+  var labels = _ref.labels,
+      activeIndex = _ref.activeIndex;
+  return __jsx(NavButtonsArea, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, labels.map(function (label, index) {
+    return __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      key: label,
+      href: "/".concat(label.toLowerCase()),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, index === activeIndex ? __jsx(ActiveNavButton, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, label) : __jsx(NavButton, {
+      onClick: function onClick() {
+        return console.log("click");
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, label));
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NavButtons);
+var NavButtonsArea = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "NavButtons__NavButtonsArea",
+  componentId: "cefi1s-0"
+})(["display:flex;font-size:14px;color:rgba(255,255,255,0.6);flex-direction:row;align-items:baseline;width:100%;overflow-x:scroll;overflow-y:hidden;-webkit-overflow-scrolling:touch;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.1);"]);
+var ActiveNavButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a.withConfig({
+  displayName: "NavButtons__ActiveNavButton",
+  componentId: "cefi1s-1"
+})(["display:flex;justify-content:center;margin-right:1.5vw;font-size:15px;letter-spacing:3px;text-transform:uppercase;padding:23px 15px;color:rgba(255,255,255,1);border-bottom:2px solid rgba(255,255,255,1);"]);
+var NavButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a.withConfig({
+  displayName: "NavButtons__NavButton",
+  componentId: "cefi1s-2"
+})(["margin-right:1.5vw;padding:23px 15px;letter-spacing:3px;text-transform:uppercase;border-bottom:2px solid rgba(255,255,255,0);&:hover{color:rgba(255,255,255,1);border-bottom:2px solid rgba(255,255,255,1);}"]);
+/* const Button = styled.div`
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #6152e7;
+  margin-right: 10px;
+  padding: 9px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 50px;
+  border-radius: 8px;
+  text-align: center;
+`;
+
+const Buttons = styled.div`
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+`; */
+
+/***/ }),
+
+/***/ "./src/components/Searchbox.tsx":
+/*!**************************************!*\
+  !*** ./src/components/Searchbox.tsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
+/* harmony import */ var react_spring__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-spring */ "./node_modules/react-spring/web.js");
+/* harmony import */ var react_icons_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/md */ "./node_modules/react-icons/md/index.esm.js");
+var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/src/components/Searchbox.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+var placeholder = "";
+
+var SearchBox = function SearchBox(_ref) {
+  var value = _ref.value,
+      _onChange = _ref.onChange,
+      _onFocus = _ref.onFocus,
+      _onBlur = _ref.onBlur;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      focus = _useState[0],
+      setFocus = _useState[1];
+
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      hover = _useState2[0],
+      setHover = _useState2[1];
+
+  var inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  console.log(focus, hover);
+  /* const props = useSpring({
+    maxWidth: focus || hover ? 1000 : 350,
+    config: { tension: 500 }
+  }); */
+
+  return __jsx(SearchBoxArea, {
+    onMouseEnter: function onMouseEnter() {
+      setHover(true);
+      setFocus(true);
+    },
+    onMouseLeave: function onMouseLeave() {
+      setHover(false);
+      setFocus(false);
+    },
+    onClick: function onClick() {
+      setFocus(true);
+      _onFocus && _onFocus();
+      inputRef.current.focus();
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaSearch"], {
+    size: 22,
+    color: "rgba(255, 255, 255, 0.5)",
+    style: {
+      margin: 8
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }), __jsx("input", {
+    style: {
+      padding: "6px",
+      display: "flex",
+      flex: 1,
+      borderRadius: "10px",
+      backgroundColor: "transparent",
+      borderStyle: "solid",
+      borderColor: "rgba(255, 255, 255, 0.05)",
+      borderWidth: "0px",
+      flexFlow: "row wrap",
+      margin: "2px",
+      outline: "none",
+      fontSize: "18px",
+      color: "white",
+      caretColor: "white",
+      overflow: "hidden"
+    },
+    ref: inputRef,
+    type: "text",
+    autoCorrect: "off",
+    placeholder: placeholder,
+    onChange: function onChange(event) {
+      return _onChange(event.target.value);
+    },
+    value: value,
+    onKeyDown: function onKeyDown(e) {
+      if (e.key === "Enter") {
+        e.target.blur();
+      }
+    },
+    onMouseOver: function onMouseOver(e) {
+      e.target.focus();
+    },
+    onFocus: function onFocus() {
+      setFocus(true);
+      _onFocus && _onFocus();
+    },
+    onBlur: function onBlur() {
+      setFocus(false);
+      _onBlur && _onBlur();
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }), value && __jsx(react_icons_md__WEBPACK_IMPORTED_MODULE_4__["MdClear"], {
+    size: 22,
+    color: "rgba(255,255,255,0.5)",
+    style: {
+      marginRight: 10
+    },
+    onClick: function onClick() {
+      return _onChange("");
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SearchBox);
+var SearchBoxArea = Object(react_spring__WEBPACK_IMPORTED_MODULE_3__["animated"])(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "Searchbox__SearchBoxArea",
+  componentId: "whp454-0"
+})(["padding:6px 10px;display:flex;flex:1 1 450px;border-radius:25px;background-color:rgba(255,255,255,0.09);border-style:solid;border-color:rgba(255,255,255,0.05);border-width:0;flex-flow:row wrap;align-items:center;flex-wrap:nowrap;max-width:1000px;margin:4.5vw 0;"])); //   const CategoryArea = animated(styled.div`
+//   border-radius: 15px;
+//   border-color: rgba(255, 255, 255, 0);
+//   /* background-color: hsla(246, 76%, 61%, 0.8); */
+//   border-style: solid;
+//   /* box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1); */
+//   border-width: 0px;
+//   flex-flow: row wrap;
+//   display: flex;
+//   padding: 0 20px;
+//   margin: 0 0 0 15px;
+//   height: 38px;
+//   align-items: center;
+//   flex-wrap: nowrap;
+//   max-width: 1000px;
+//   overflow: hidden;
+// `);
+// const CategoryType = animated(styled.div`
+//   border-color: rgba(255, 255, 255, 0);
+//   background-color: transparent;
+//   border-style: solid;
+//   /* box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1); */
+//   color: black;
+//   border-width: 0px;
+//   flex-flow: row wrap;
+//   display: flex;
+//   padding: 0 10px 0 20px;
+//   height: 100%;
+//   margin-left: 0px;
+//   color: white;
+//   align-items: center;
+//   flex-wrap: nowrap;
+//   max-width: 1000px;
+//   &:hover {
+//     background-color: rgba(255, 255, 255, 0.1);
+//   }
+// `);
+// const ValueType = animated(styled.div`
+//   border-color: rgba(255, 255, 255, 0.1);
+//   background-color: transparent;
+//   /* border-left: 1px; */
+//   border-style: solid;
+//   border-width: 0;
+//   /* box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1); */
+//   flex-flow: row wrap;
+//   display: flex;
+//   padding: 0 20px 0 10px;
+//   height: 100%;
+//   margin-right: 0px;
+//   color: white;
+//   align-items: center;
+//   flex-wrap: nowrap;
+//   max-width: 1000px;
+//   &:hover {
+//     background-color: rgba(255, 255, 255, 0.1);
+//   }
+// `);
+
+/***/ }),
+
+/***/ "./src/components/index.ts":
+/*!*********************************!*\
+  !*** ./src/components/index.ts ***!
+  \*********************************/
+/*! exports provided: Article, NavBar, Footer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Article__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Article */ "./src/components/Article.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Article", function() { return _Article__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/components/NavBar.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NavBar", function() { return _NavBar__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return _Footer__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+
+
+
+
+/***/ }),
+
+/***/ "./src/data/articles.ts":
+/*!******************************!*\
+  !*** ./src/data/articles.ts ***!
+  \******************************/
+/*! exports provided: links, articles */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "links", function() { return links; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "articles", function() { return articles; });
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/index.js");
+/* harmony import */ var object_hash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! object-hash */ "./node_modules/object-hash/dist/object_hash.js");
+/* harmony import */ var object_hash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(object_hash__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var links = [{
+  title: "Twiggy is a code size profiler for Rust",
+  link: "https://github.com/rustwasm/twiggy",
+  topics: ["Rust", "profiler"]
+}, {
+  title: "This very simple example shows usage of WebAssembly in Webpack.",
+  link: "https://github.com/webpack/webpack/tree/master/examples/wasm-simple",
+  topics: ["Webpack", "WebAssembly"]
+}, {
+  title: "Understanding WebAssembly text format",
+  link: "https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format",
+  topics: ["WebAssembly"]
+}, {
+  title: "Walt in 5 Minutes",
+  link: "https://github.com/ballercat/walt/wiki/Walt-In-5-Minutes",
+  topics: ["Walt", "WebAssembly", "Typescript"]
+}, {
+  title: "Rust to WebAssembly Hello World",
+  link: "https://rustwasm.github.io/book/hello-world.html",
+  topics: ["Rust", "WebAssembly", "hello world"]
+}, {
+  title: "Rust WASM Book: Shrinking .wasm Size",
+  link: "https://rustwasm.github.io/book/game-of-life/code-size.html",
+  topics: ["Rust", "WebAssembly"]
+}, {
+  title: "WebAssembly Reference Manual",
+  link: "https://github.com/sunfishcode/wasm-reference-manual/blob/master/WebAssembly.md",
+  topics: ["WebAssembly", "documentation"]
+}, {
+  title: "Introduction to WebAssembly",
+  link: "https://rsms.me/wasm-intro",
+  topics: ["WebAssembly", "introduction"]
+}, {
+  title: "Awesome Webassembly System Interface (WASI)",
+  link: "https://github.com/wasmerio/awesome-wasi",
+  topics: ["WebAssembly", "WASI"]
+}];
+var articles = [{
+  headline: "Publishing compiled Rust modules as WebAssembly binaries on NPM",
+  body: "wasm-pack is a tool for assembling and packaging Rust crates that target WebAssembly. These packages can be published to the npm Registry and used alongside other packages. This means you can use them side-by-side with JS and other packages, and in many kind of applications.",
+  image: "https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/04/wasm-pack-01.png",
+  link: "https://hacks.mozilla.org/2018/04/hello-wasm-pack/",
+  author: "Ashley Williams",
+  date: "April 18, 2018",
+  icon: "Rust_programming_language_black_logo.svg",
+  topics: ["WebAssembly", "NPM", "Rust", "Javascript"]
+}, {
+  headline: "Google Earth switching to WebAssembly",
+  body: "Google Earth is switching from Native Client to WebAssembly",
+  author: "Google",
+  date: "October 24, 2017",
+  image: "https://cdn-images-1.medium.com/max/800/0*YxeGMxX6L0I7XvXt.",
+  link: "https://medium.com/google-earth/earth-on-web-the-road-to-cross-browser-7338e0f46278",
+  topics: ["WebAssembly", "Google Earth", "Web App"]
+}, {
+  headline: "WebAssembly support now shipping in all major browsers",
+  date: "November 13, 2017",
+  link: "https://blog.mozilla.org/blog/2017/11/13/webassembly-in-browsers/",
+  body: "Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge now all support the WebAssembly MVP",
+  image: "../static/browser-support.png",
+  author: "Mozilla",
+  topics: ["Chrome", "Edge", "Safari", "Firefox", "WebAssembly"]
+}, {
+  headline: "WebAssembly Meetup at Google Munich",
+  date: "June 29, 2018",
+  author: "WebAssembly Munich Meetup",
+  location: "Google, Munich, Germany",
+  link: "https://www.meetup.com/de-DE/WebAssembly/",
+  body: "First WebAssembly meetup in Germany with talks from the Google WebAssembly team will take place on July 17 at Google's Munich head quarter. Talks will be about going from C++ or Assemblyscript to WebAssembly and how Chrome processes WebAssembly",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Google_Entwicklungszentrum_Arnulfpark_Muenchen-4.jpg/640px-Google_Entwicklungszentrum_Arnulfpark_Muenchen-4.jpg",
+  topics: ["Google", "WebAssembly", "Meetup"]
+}, {
+  headline: "Dropbox's new compression algorithms written in Rust",
+  date: "June 19, 2018",
+  author: "Dropbox",
+  link: "https://blogs.dropbox.com/tech/2018/06/building-better-compression-together-with-divans/",
+  body: "DivANS is written in the Rust programming language, since Rust has guarantees about safety, security, and determinism in the safe subset of the language. Rust can also be as fast as hand-tuned C code and doesn’t need a garbage collector. Rust programs embed well in any programming language that support a C foreign function interface (FFI) and even allow runtime selection of the memory allocator through that C FFI. These properties make it easy to embed the DivANS codec in a webpage with WASM.",
+  topics: ["Rust", "WebAssembly"],
+  image: "https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/dropbox-logo@2x.jpg"
+}, {
+  headline: "AutoCAD Web App presented at Google IO 2018",
+  date: "May 28, 2018",
+  author: "Google",
+  link: "http://blogs.autodesk.com/autocad/autocad-web-app-google-io-2018/",
+  body: "Autodesk has ported AutoCAD to the browser: The AutoCAD Web App presented at Google I/O 2018 runs on WebAssembly. The AutoCAD team took a 35 year old code base...and got it to compile directly in a browser using WebAssembly.... So now the power of AutoCAD is just a link away.",
+  image: "https://pbs.twimg.com/media/DctE099V0AEm14h.jpg:medium",
+  topics: ["AutoCAD", "Web App", "WebAssembly"]
+}, {
+  headline: "Sneak Peek at WebAssembly Studio",
+  date: "April 11, 2018",
+  author: "Michael Bebenita, Mozilla",
+  link: "https://hacks.mozilla.org/2018/04/sneak-peek-at-webassembly-studio/",
+  body: "WebAssembly.Studio is an online IDE (integrated development environment) that helps you learn and teach others about WebAssembly. It’s also a Swiss Army knife that comes in handy whenever working with WebAssembly.",
+  image: "https://hacks.mozilla.org/files/2018/04/mainwasm1.png",
+  topics: ["Integrated Development Environment", "WebAssembly"]
+}, {
+  headline: "Baby’s First Rust + WebAssembly module: Say hi to JSConf EU!",
+  date: "June 2, 2018",
+  author: "Lin Clark",
+  body: "A demo hello world project for JSConf EU demonstrating writing a WebAssembly module in Rust",
+  link: "https://hacks.mozilla.org/2018/06/babys-first-rustwebassembly-module-say-hi-to-jsconf-eu/",
+  topics: ["WebAssembly", "Rust", "hello world"],
+  image: "https://hacks.mozilla.org/files/2018/03/01_rust_loves_js-768x309.png"
+}, {
+  headline: "PSPDFKit: A Real-World WebAssembly Benchmark",
+  link: "https://pspdfkit.com/blog/2018/a-real-world-webassembly-benchmark/",
+  date: "July, 7, 2018",
+  author: "G. Gurgone, P. Spiess",
+  image: "https://pspdfkit.com/images/blog/2018/webassembly-benchmark/results-macOS.png",
+  body: "Currently, only in Firefox the WebAssembly performance of PSPDFKit is significantly better than Javascript, while others browsers currently do not profit from WebAssembly yet. In Safari and Edge the WebAssembly version runs significantly slower than the Javascript version.",
+  topics: ["WebAssembly", "benchmark", "PSPDFKit", "PDF", "Firefox", "Chrome", "Edge", "Safari"]
+}, {
+  headline: "Vim editor ported to WebAssembly",
+  link: "https://rhysd.github.io/vim.wasm/",
+  date: "June 9, 2018",
+  author: "Linda",
+  body: "This project is an experimental fork of Vim editor by @rhysd to compile it into WebAssembly using emscripten and binaryen.",
+  topics: ["vim", "WebAssembly"],
+  image: "https://github.com/rhysd/vim.wasm/raw/wasm/wasm-readme-images/main-screen.png"
+}, {
+  author: "Devon Govett",
+  date: "January 23, 2018",
+  headline: "Parcel v1.5.0 released: Source Maps, WebAssembly, Rust, and more!",
+  body: "Parcel v1.5.0 is a HUGE release. The highlights include: WebAssembly support — an emerging technology, this will become more important in the future and enable a diversity of languages on the web and native-level performance. Parcel makes it super easy to get started — we handle many of the details for you with zero configuration. Rust → WebAssembly support — continuing on the above, the first language to support compiling to WebAssembly out of the box is Rust! Now you can import a .rs file just like you can .js!",
+  link: "https://medium.com/@devongovett/parcel-v1-5-0-released-source-maps-webassembly-rust-and-more-3a6385e43b95",
+  topics: ["WebAssembly", "Parcel", "Rust"],
+  image: "https://cdn-images-1.medium.com/max/1600/1*Gjhk6qvPM5zAy1iPPS1ttg.png"
+}, {
+  author: "Mathias Bynens, Google V8 team",
+  date: "April 1, 2018",
+  body: "When working with WebAssembly, you often want to download a module, compile it, instantiate it, and then use whatever it exports in JavaScript. This post starts off with a common but suboptimal code snippet doing exactly that, discusses several possible optimizations, and eventually shows the simplest, most efficient way of running WebAssembly from JavaScript.",
+  headline: "Loading WebAssembly modules efficiently",
+  link: "https://developers.google.com/web/updates/2018/04/loading-wasm",
+  topics: ["WebAssembly", "V8"],
+  image: "https://developers.google.com/web/updates/images/2018/04/loading-wasm/streaming.png"
+}, {
+  author: "Sean T. Larkin",
+  date: "July 31, 2017",
+  headline: "Webpack implementing first-class support for WebAssembly",
+  body: "At webpack, we would like to shift our focus to supporting more module types. One of these module types we would like to treat as a first-class citizen is WebAssembly. WebAssembly is described by Mozilla as …an emerging standard whose goal is to define a safe, portable, size- and load-time efficient binary compiler target which offers near-native performance — a virtual CPU for the Web.",
+  link: "https://medium.com/webpack/webpack-awarded-125-000-from-moss-program-f63eeaaf4e15",
+  image: "https://raw.githubusercontent.com/webpack/media/master/logo/logo-on-white-bg.png",
+  topics: ["WebAssembly", "Webpack"]
+}, {
+  author: "Lin Clark",
+  headline: "Creating and working with WebAssembly modules",
+  date: "February 28, 2018",
+  body: "WebAssembly modules define functions that can be used from JavaScript. So just like you download a module like lodash from npm today and call functions that are part of its API, you will be able to download WebAssembly modules in the future. So let’s see how we can create WebAssembly modules, and then how we can use them from JavaScript.",
+  link: "https://hacks.mozilla.org/2017/02/creating-and-working-with-webassembly-modules/",
+  image: "https://hacks.mozilla.org/files/2017/02/04-01-langs09-768x469.png",
+  topics: ["WebAssembly"]
+}, {
+  headline: "Six different 8-bit emulators compiled to WebAssembly",
+  date: "July 11, 2018",
+  author: "Andre Weissflog",
+  body: "Six different 8-bit emulators (including the famous Commodore C64), all written in C and compiled to WebAssembly.",
+  link: "https://floooh.github.io/tiny8bit/",
+  topics: ["WebAssembly", "emulator", "C64"],
+  image: "https://pbs.twimg.com/media/Dhzr7MrWAAALb2W.jpg:large"
+}, {
+  headline: "Where is WebAssembly now and what’s next?",
+  link: "https://hacks.mozilla.org/2017/02/where-is-webassembly-now-and-whats-next/",
+  date: "February 28, 2017",
+  body: "On February 28, the four major browsers announced their consensus that the MVP of WebAssembly is complete. This provides a stable initial version that browsers can start shipping. This provides a stable core that browsers can ship. This core doesn’t contain all of the features that the community group is planning, but it does provide enough to make WebAssembly fast and usable.",
+  topics: ["WebAssembly", "MVP", "Edge", "Chrome", "Safari", "Firefox"],
+  image: "https://hacks.mozilla.org/files/2017/02/logo_party01-768x259.png"
+}, {
+  headline: "Introducing inNative: Run WebAssembly Outside The Sandbox at 95% Native Speed",
+  link: "https://innative.dev/news/introducing-innative/",
+  author: "Eric McClure",
+  date: "May 17, 2019",
+  body: "Many people are excited about WebAssembly, which lets you use languages other than JavaScript on the web. With WebAssembly, you can run C, C++, Rust, Zig, Go, or pretty much anything that compiles to LLVM in a sandbox running inside your web browser. This has performance costs, but many people are working on highly optimized JIT compilers designed to minimize these costs as much as possible. I’m not interested in that. I’m interested in a completely different question: How fast can WebAssembly go outside the sandbox?",
+  topics: ["WebAssembly", "sandbox", "native", "universal binaries"],
+  image: "https://innative.dev/img/innative.png"
+}, {
+  headline: "Assemblyscript: Support for automatic memory management on the horizon",
+  link: "https://github.com/AssemblyScript/assemblyscript/pull/592",
+  date: "May 24, 2019",
+  author: "AssemblyScript",
+  body: "The Assemblyscript team is working on automatic memory management based on automatic reference counting (ARC) as native Webassembly Garbage Collection runtime is not yet on the horizon. ARC is a mostly compile time approach to memory management as in Swift.",
+  topics: ["WebAssembly", "memory management", "Typescript", "AssemblyScript"],
+  image: "https://github.com/AssemblyScript/assemblyscript/raw/master/media/icon.png"
+}, {
+  headline: "eBay's Webassembly barcode scanner",
+  link: "https://www.ebayinc.com/stories/blogs/tech/webassembly-at-ebay-a-real-world-use-case/?utm_source=twitter&utm_medium=Social&utm_campaign=AddThisWidget#.XOhbJgZV6Nw.twitter",
+  date: "May 22, 2019",
+  author: "Pranav Jha and Senthil Padmanabhan",
+  body: "From the time it was announced, WebAssembly caused a huge buzz in the front-end world. The web community readily embraced the idea of taking code written in programming languages other than JavaScript and running that code in the browser. Above all WebAssembly consistently guarantees native speeds much faster than JavaScript. At eBay, we were no different.",
+  topics: ["WebAssembly", "application", "eBay", "computer vision"],
+  image: "https://static.ebayinc.com/static/theme/images/logo.svg?v=1559154993"
+}, {
+  headline: "Standardizing WASI: A system interface to run WebAssembly outside the web",
+  author: "Lin Clark",
+  date: "March 27, 2019",
+  body: "Today, we announce the start of a new standardization effort — WASI, the WebAssembly system interface. Why: Developers are starting to push WebAssembly beyond the browser, because it provides a fast, scalable, secure way to run the same code across all machines. But we don’t yet have a solid foundation to build upon. Code outside of a browser needs a way to talk to the system — a system interface. And the WebAssembly platform doesn’t have that yet.",
+  topics: ["WebAssembly", "WASI"],
+  link: "https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/",
+  image: "https://hacks.mozilla.org/files/2019/03/05-01-wasi-1-768x644.png"
+}, {
+  headline: "Next-Generation 3D Graphics on the Web",
+  author: "Ricardo Cabello (Mr. Doob), Corentin Wallez",
+  date: "May 9, 2019",
+  body: "This talk will cover the latest updates for adding 3D to your web site. You'll learn how to use <model-viewer> and new features for rendering, AR, and interactivity. You'll also see some phenomenal sites created with three.js. Then you'll get an overview of the WebGPU API that will provide modern features such as “GPU compute” as well as lower overhead access to GPU hardware and better, more predictable performance. Expect performance gains in Tensorflow.js up to 10x.",
+  topics: ["WebGPU", "WebIDL"],
+  link: "https://youtu.be/K2JzIUIHIhc",
+  image: "https://storage.googleapis.com/io-19-assets/images/global/hashtag.gif"
+}, {
+  headline: "WebAssembly Implicit caching in V8 release 7.5",
+  author: "Google V8 team",
+  date: "May 16, 2019",
+  body: "We are planning to roll out implicit caching of WebAssembly compilation artifacts in Chrome 75. This means users that visit the same page a second time don’t need to compile the already-seen WebAssembly modules. Instead they are loaded from the cache. This works similarly to Chromium’s JavaScript code-cache. In case you want to use a similar feature in your V8 embedding, please take inspiration from Chromium’s implementation.",
+  topics: ["WebAssembly", "V8"],
+  link: "https://v8.dev/blog/v8-release-75",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/V8_JavaScript_engine_logo_2.svg/1920px-V8_JavaScript_engine_logo_2.svg.png"
+}, {
+  headline: "Compiling Swift to WebAssembly",
+  author: "SwiftWasm",
+  date: "May 10, 2019",
+  body: "The open source project SwiftWasm announced: \"SwiftWasm compiles your Swift code to WebAssembly. Many features in Swift aren't working on WebAssembly yet. We're working on integrating our patches into the official Swift compiler.\" Swift is a programming language invented by the LLVM author Chris Lattner and feature an automatic reference counting (ARC) approach resolving most of the automatic memory management at compile time, and an easy to learn syntax, an interpreter and fast compiled code.",
+  topics: ["WebAssembly", "Swift"],
+  link: "https://swiftwasm.org/",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Swift_logo_with_text.svg/320px-Swift_logo_with_text.svg.png"
+}, {
+  headline: "Entropic, a new decentralized package manager announced",
+  author: "C J Silverio",
+  date: "June 3, 2019",
+  body: "Ex NPM chief technology officer Silverio announced a federated, decentral package manager at JSConf EU yesterday in response to the problems of a venture capitalist backed central registry. Silverio will meet with Mozilla to learn about the needs for Webassembly support. Entropic registries will also be able to run on the edge of CDNs like Cloudflare workers.",
+  topics: ["WebAssembly", "Entropic"],
+  link: "https://github.com/entropic-dev/entropic",
+  image: "https://pbs.twimg.com/media/D8IO_JBWwAASplG.jpg"
+}, {
+  headline: "Compiling C / C++ to WebAssembly without Emscripten",
+  author: "Surma",
+  date: "May 28, 2019",
+  body: "Emscripten uses the clang C/C++ compiler based on LLVM and emulates APIs such as OpenGL and POSIX needed to port 3D games to the web. This article by Surma discusses a lean approach that does not target compiling existing applications to WebAssembly and thus does not bring all the weight for legacy support.",
+  topics: ["WebAssembly", "LLVM", "C", "C++"],
+  link: "https://dassur.ma/things/c-to-webassembly/",
+  image: "https://llvm.org/img/DragonMedium.png"
+}, {
+  headline: "Announcing Lucet: Fastly’s native WebAssembly compiler and runtime",
+  author: "Pat Hickey",
+  date: "March 28, 2019",
+  body: "Fastly open sources Lucet, its native WebAssembly compiler and runtime, designed to take WebAssembly beyond the browser, and build a platform for faster, safer execution on Fastly’s edge cloud. We want to enable our customers to go beyond Fastly VCL and move even more logic to the edge, and use any language they choose. Lucet is the engine behind Terrarium, our experimental platform for edge computation using WebAssembly. Soon, we will make it available on Fastly’s edge cloud as well.",
+  topics: ["WebAssembly", "Fastly", "standalone runtime", "CDN", "edge", "cloud"],
+  link: "https://www.fastly.com/blog/announcing-lucet-fastly-native-webassembly-compiler-runtime",
+  image: "https://www.fastly.com/assets/logo-bb62411dfd9737caea27fdab1485bd7d2b397f8f84ec8a1f773393a877a4bf6a.svg"
+}, {
+  headline: "TensorFlow developers looking into WebAssembly and WebGPU support",
+  author: "Smilkov et al.",
+  date: "February 4, 2019",
+  body: "Two new web standards, WebAssembly and WebGPU, both have potential to improve TensorFlow.js performance. WebGPU is an emerging standard to express general purpose parallel computation on the GPU, enabling more optimised linear algebra kernels than those the WebGL backend can support today.",
+  topics: ["WebAssembly", "WebGPU", "Tensorflow"],
+  link: "https://blog.acolyer.org/2019/02/04/tensorflow-js-machine-learning-for-the-web-and-beyond/",
+  image: "https://js.tensorflow.org/images/lockup.svg"
+}, {
+  headline: "Autodesk releases AutoCAD web app for Firefox",
+  author: "Autodesk",
+  date: "June 8, 2019",
+  body: "Autodesk today announced Firefox support for the AutoCAD Web App. AutoCAD is based on a codebase written decades ago. The Webassembly port demonstrates the potential of Webassembly to overcome barriers separating previously fragmented areas of software development divided by operating system, programming languages and frameworks.",
+  topics: ["WebAssembly", "Autodesk", "AutoCAD"],
+  link: "https://www.autodesk.com/products/autocad-web-app/overview?linkId=68719474",
+  image: "https://damassets.autodesk.net/content/dam/autodesk/www/products/autocad-web-app/overview-page/benefits/cohesive-autocad-experience-thumb-600x300.jpg"
+}, {
+  headline: "AssemblyScript now with automatic memory management",
+  author: "AssemblyScript",
+  date: "June 5, 2019",
+  body: "AssemblyScript adds support for automatic memory management. The solution is Automatic Reference Counting (ARC) like in Swift. For references without circular depdendencies this is done at compile time without the need for a  Garbage Collection runtime. This solution is more than a stopgap for the upcoming Garbage Collection proposal, but it may also prove to have its benefits in terms of predictabile performance.",
+  topics: ["WebAssembly", "AssemblyScript", "memory management", "ARC"],
+  link: "https://twitter.com/AssemblyScript/status/1136387616725712899",
+  image: "https://github.com/AssemblyScript/assemblyscript/raw/master/media/icon.png"
+}, {
+  headline: "Plot to steal cryptocurrency foiled by the npm security team",
+  author: "NPM",
+  date: "June 5, 2019",
+  body: '"Yesterday, the npm, Inc. security team, in collaboration with Komodo, helped protect over $13 million USD in cryptocurrency assets as we found and responded to a malware threat targeting the users of a cryptocurrency wallet called Agama. This attack focused on getting a malicious package into the build chain for Agama and stealing the wallet seeds and other login passphrases used within the application." This is a fundamental problem inherent to the Node.js ecosystem. Webassembly and WASI\'s module sandbox could be a solution to reduce the surface of this kind of attack vector.',
+  topics: ["Node.js", "NPM", "security", "module security", "package security"],
+  link: "https://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm",
+  image: "https://static.npmjs.com/images/logo.svg"
+}].sort(function (a, b) {
+  if (Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["getTime"])(new Date(b.date)) - Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["getTime"])(new Date(a.date)) !== 0) {
+    return Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["getTime"])(new Date(b.date)) - Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["getTime"])(new Date(a.date));
+  } else {
+    return object_hash__WEBPACK_IMPORTED_MODULE_1___default()(b).localeCompare(object_hash__WEBPACK_IMPORTED_MODULE_1___default()(a));
+  }
+});
+
+/***/ }),
+
+/***/ "./src/pages/index.tsx":
+/*!*****************************!*\
+  !*** ./src/pages/index.tsx ***!
+  \*****************************/
+/*! exports provided: default, findWord, Centered, Articles, ArticleColumns, ContentArea */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47727,9 +47727,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var object_hash__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! object-hash */ "./node_modules/object-hash/dist/object_hash.js");
 /* harmony import */ var object_hash__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(object_hash__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _data_articles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../data/articles */ "./data/articles.ts");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components */ "./components/index.ts");
-var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/pages/index.tsx";
+/* harmony import */ var _data_articles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../data/articles */ "./src/data/articles.ts");
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components */ "./src/components/index.ts");
+var _jsxFileName = "/Users/thomas/Documents/Arbeit/Veranstaltungen/Meetups/WebAssembly/website/webassembly.eu/src/pages/index.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -47738,11 +47738,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-function findWord(word, str) {
-  return str.split(" ").some(function (w) {
-    return w.startsWith(word);
-  });
-}
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
       value = _useState[0],
@@ -47761,19 +47756,19 @@ function findWord(word, str) {
   return __jsx(Centered, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 16
     },
     __self: this
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 17
     },
     __self: this
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 18
     },
     __self: this
   }, "WebAssembly")), __jsx(_components__WEBPACK_IMPORTED_MODULE_5__["NavBar"], {
@@ -47783,34 +47778,39 @@ function findWord(word, str) {
     value: value,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 20
     },
     __self: this
   }), __jsx(Articles, {
     articles: _data_articles__WEBPACK_IMPORTED_MODULE_4__["articles"].filter(articleFilter),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 21
     },
     __self: this
   }));
 });
+function findWord(word, str) {
+  return str.split(" ").some(function (w) {
+    return w.startsWith(word);
+  });
+}
 var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__Centered",
-  componentId: "sc-4eylin-0"
+  componentId: "r5l8jb-0"
 })([""]);
 var Articles = function Articles(_ref2) {
   var articles = _ref2.articles;
   return __jsx(ContentArea, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
   }, __jsx(ArticleColumns, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 35
     },
     __self: this
   }, articles.map(function (article) {
@@ -47819,37 +47819,37 @@ var Articles = function Articles(_ref2) {
       data: article,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 37
       },
       __self: this
     });
   })), __jsx(_components__WEBPACK_IMPORTED_MODULE_5__["Footer"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 40
     },
     __self: this
   }));
 };
 var ArticleColumns = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ArticleColumns",
-  componentId: "sc-4eylin-1"
+  componentId: "r5l8jb-1"
 })(["display:grid;width:100%;grid-gap:10px;grid-row-gap:30px;grid-column-gap:50px;grid-template-columns:repeat(auto-fit,minmax(325px,1fr));"]);
 var ContentArea = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ContentArea",
-  componentId: "sc-4eylin-2"
+  componentId: "r5l8jb-2"
 })(["display:flex;flex-direction:column;align-items:flex-start;width:92%;padding-left:4%;padding-right:4%;@keyframes enter{0%{opacity:0;transform:translate3d(0,100px,0);}50%{opacity:0;transform:translate3d(0,100px,0);}100%{opacity:1;transform:translate3d(0,0,0);}}animation:enter 0.5s;"]);
 
 /***/ }),
 
 /***/ 0:
-/*!************************************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fpages%2Findex.tsx ***!
-  \************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fsrc%2Fpages%2Findex.tsx ***!
+  \******************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fpages%2Findex.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fsrc%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fthomas%2FDocuments%2FArbeit%2FVeranstaltungen%2FMeetups%2FWebAssembly%2Fwebsite%2Fwebassembly.eu%2Fsrc%2Fpages%2Findex.tsx!./");
 
 
 /***/ }),
