@@ -7939,7 +7939,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
   displayName: "summit__Logo",
   componentId: "r1rl12-0"
-})(["max-width:450px;width:200px;margin-bottom:20px;"]);
+})(["max-width:450px;width:200px;"]);
 var Centered = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "summit__Centered",
   componentId: "r1rl12-1"
@@ -7951,7 +7951,7 @@ var WhiteSpan = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].span.w
 var GrayDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "summit__GrayDiv",
   componentId: "r1rl12-3"
-})(["font-size:20px;color:rgba(255,255,255,0.5);margin:20px;line-height:1.5;"]);
+})(["font-size:20px;color:rgba(255,255,255,0.5);margin:30px 20px;line-height:1.5;"]);
 var Headline = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "summit__Headline",
   componentId: "r1rl12-4"
@@ -7959,11 +7959,11 @@ var Headline = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wit
 var Button = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "summit__Button",
   componentId: "r1rl12-5"
-})(["font-size:20px;color:rgba(255,255,255,0.75);border:1px solid rgba(255,255,255,0.5);background-color:rgba(255,255,255,0.05);border-radius:25px;padding:10px 5px;font-weight:bold;text-align:center;transition:150ms;&:hover{border:1px solid transparent;box-shadow:8px 8px 15px rgba(0,0,0,0.25);transform:scale(1.03);color:black;background-color:rgba(255,255,0,0.75);}"]);
+})(["font-size:20px;color:rgba(255,255,255,0.75);border:1px solid rgba(255,255,255,0.5);background-color:rgba(255,255,255,0.05);border-radius:25px;padding:10px 5px;font-weight:bold;text-align:center;transition:150ms;&:hover{border:1px solid transparent;box-shadow:8px 8px 5px rgba(0,0,0,0.15);transform:scale(1.04);color:black;background-color:rgba(255,255,0,0.75);}"]);
 var Spacer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "summit__Spacer",
   componentId: "r1rl12-6"
-})(["font-size:20px;line-height:1.5;padding:50px 20px;"]);
+})(["font-size:20px;line-height:1.5;padding:25px 20px 0 20px;"]);
 
 /***/ }),
 
