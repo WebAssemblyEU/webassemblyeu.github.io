@@ -1,5 +1,41 @@
 self.__precacheManifest = [
   {
+    "url": "/_next/static/NfQ48p_YlRBG7vCzKSFHz/pages/_app.js",
+    "revision": "3ae3dfaf55ed8861a5da"
+  },
+  {
+    "url": "/_next/static/NfQ48p_YlRBG7vCzKSFHz/pages/_error.js",
+    "revision": "b750320fe403251693b6"
+  },
+  {
+    "url": "/_next/static/NfQ48p_YlRBG7vCzKSFHz/pages/about.js",
+    "revision": "258a0ca9d2c640f52861"
+  },
+  {
+    "url": "/_next/static/NfQ48p_YlRBG7vCzKSFHz/pages/article.js",
+    "revision": "a29987459eddbd747482"
+  },
+  {
+    "url": "/_next/static/NfQ48p_YlRBG7vCzKSFHz/pages/draft.js",
+    "revision": "771b8d514a5dc3b6db3e"
+  },
+  {
+    "url": "/_next/static/NfQ48p_YlRBG7vCzKSFHz/pages/index.js",
+    "revision": "15316922985809c738eb"
+  },
+  {
+    "url": "/_next/static/NfQ48p_YlRBG7vCzKSFHz/pages/overview.js",
+    "revision": "62d527c1ffe0ce334ed3"
+  },
+  {
+    "url": "/_next/static/NfQ48p_YlRBG7vCzKSFHz/pages/summit.js",
+    "revision": "b8cc681e4a7db0bcfa2b"
+  },
+  {
+    "url": "/_next/static/NfQ48p_YlRBG7vCzKSFHz/pages/welcome.js",
+    "revision": "f0707d31906ebe24a714"
+  },
+  {
     "url": "/_next/static/chunks/commons.a783cd9ce934e1bb0e5f.js",
     "revision": "546080476505d991bd5f"
   },
@@ -14,42 +50,6 @@ self.__precacheManifest = [
   {
     "url": "/_next/static/runtime/webpack-08f7b238829422e3b9b2.js",
     "revision": "fc489b339eb65f8713fe"
-  },
-  {
-    "url": "/_next/static/wkRqkAtp-YXYgPwnqqAfI/pages/_app.js",
-    "revision": "11782648513c08632fd7"
-  },
-  {
-    "url": "/_next/static/wkRqkAtp-YXYgPwnqqAfI/pages/_error.js",
-    "revision": "c9ef1c0aa6a1dc85d18f"
-  },
-  {
-    "url": "/_next/static/wkRqkAtp-YXYgPwnqqAfI/pages/about.js",
-    "revision": "fc5831b9580518fd6484"
-  },
-  {
-    "url": "/_next/static/wkRqkAtp-YXYgPwnqqAfI/pages/article.js",
-    "revision": "0779d5a4e1cee4cfe1d8"
-  },
-  {
-    "url": "/_next/static/wkRqkAtp-YXYgPwnqqAfI/pages/draft.js",
-    "revision": "fc6f012fc7bc8dcf3ca1"
-  },
-  {
-    "url": "/_next/static/wkRqkAtp-YXYgPwnqqAfI/pages/index.js",
-    "revision": "57c89e158e40326d1154"
-  },
-  {
-    "url": "/_next/static/wkRqkAtp-YXYgPwnqqAfI/pages/overview.js",
-    "revision": "876f64bb0379c6f4bcdf"
-  },
-  {
-    "url": "/_next/static/wkRqkAtp-YXYgPwnqqAfI/pages/summit.js",
-    "revision": "f736291bec1031ea47e9"
-  },
-  {
-    "url": "/_next/static/wkRqkAtp-YXYgPwnqqAfI/pages/welcome.js",
-    "revision": "eadacc188bb3df493f31"
   }
 ];
 
@@ -83,12 +83,7 @@ self.addEventListener('message', (event) => {
  * requests for URLs in the manifest.
  * See https://goo.gl/S9QRab
  */
-self.__precacheManifest = [
-  {
-    "url": "static/manifest.json",
-    "revision": "91bfe2aa3842cf633ac77f31807ab505"
-  }
-].concat(self.__precacheManifest || []);
+self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/^https?.*/, new workbox.strategies.NetworkFirst({ "cacheName":"offlineCache", plugins: [new workbox.expiration.Plugin({ maxEntries: 200, purgeOnQuotaError: false })] }), 'GET');
