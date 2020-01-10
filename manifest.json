@@ -6,11 +6,11 @@
   "scope": "./",
   "icons": [
     {
-      "src": "./webassembly-logo.png",
+      "src": "./static/webassembly-logo.svg",
       "sizes": "512x512"
     }
   ],
-  "theme_color": "hsl(237, 60%, 48%)",
-  "background_color": "hsl(237, 60%, 48%)",
+  "theme_color": "hsl(246, 55%, 47%)",
+  "background_color": "hsl(246, 55%, 47%)",
   "display": "standalone"
 }

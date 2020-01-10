@@ -1,39 +1,39 @@
 self.__precacheManifest = [
   {
-    "url": "/_next/static/IXV2-ahWuqf99wyvyy0jm/pages/_app.js",
-    "revision": "9e5abdf6783fe1e023f4"
+    "url": "/_next/static/6m1nY6K3D9NrzVAaVgdgF/pages/_app.js",
+    "revision": "ca48fac010f99ca0a599"
   },
   {
-    "url": "/_next/static/IXV2-ahWuqf99wyvyy0jm/pages/_error.js",
-    "revision": "2a4fadcba14f0f9ac606"
+    "url": "/_next/static/6m1nY6K3D9NrzVAaVgdgF/pages/_error.js",
+    "revision": "5ea0d5774438e6772689"
   },
   {
-    "url": "/_next/static/IXV2-ahWuqf99wyvyy0jm/pages/about.js",
-    "revision": "20433070b8739b16b780"
+    "url": "/_next/static/6m1nY6K3D9NrzVAaVgdgF/pages/about.js",
+    "revision": "563d3ae58a5068e6e150"
   },
   {
-    "url": "/_next/static/IXV2-ahWuqf99wyvyy0jm/pages/article.js",
-    "revision": "698e161bdc0daa368edf"
+    "url": "/_next/static/6m1nY6K3D9NrzVAaVgdgF/pages/article.js",
+    "revision": "e02ef7a8bc7e09f95559"
   },
   {
-    "url": "/_next/static/IXV2-ahWuqf99wyvyy0jm/pages/draft.js",
-    "revision": "658a854c36f5eb3c7134"
+    "url": "/_next/static/6m1nY6K3D9NrzVAaVgdgF/pages/draft.js",
+    "revision": "77898e179300ffb4cfcf"
   },
   {
-    "url": "/_next/static/IXV2-ahWuqf99wyvyy0jm/pages/index.js",
-    "revision": "1fd38e01ded6630770d8"
+    "url": "/_next/static/6m1nY6K3D9NrzVAaVgdgF/pages/index.js",
+    "revision": "d38962b37960b73df3e7"
   },
   {
-    "url": "/_next/static/IXV2-ahWuqf99wyvyy0jm/pages/overview.js",
-    "revision": "db9e98c8ca74d289edee"
+    "url": "/_next/static/6m1nY6K3D9NrzVAaVgdgF/pages/overview.js",
+    "revision": "a94c3c0586a1ebe662af"
   },
   {
-    "url": "/_next/static/IXV2-ahWuqf99wyvyy0jm/pages/summit.js",
-    "revision": "50be84221ac7de7baa45"
+    "url": "/_next/static/6m1nY6K3D9NrzVAaVgdgF/pages/summit.js",
+    "revision": "63a1de97f6e0c1c4f0d0"
   },
   {
-    "url": "/_next/static/IXV2-ahWuqf99wyvyy0jm/pages/welcome.js",
-    "revision": "e83bd81b7f2e744fdd44"
+    "url": "/_next/static/6m1nY6K3D9NrzVAaVgdgF/pages/welcome.js",
+    "revision": "9b390df742acb3de34b6"
   },
   {
     "url": "/_next/static/chunks/commons.a783cd9ce934e1bb0e5f.js",
