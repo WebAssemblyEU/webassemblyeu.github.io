@@ -1,39 +1,39 @@
 self.__precacheManifest = [
   {
-    "url": "/_next/static/XntVId7-X-krEJK6Lm5rr/pages/_app.js",
-    "revision": "40cfcb356f445cccc5e8"
+    "url": "/_next/static/LivNVh-Bpi56BKzLJfEiP/pages/_app.js",
+    "revision": "9586fc221399e55d297a"
   },
   {
-    "url": "/_next/static/XntVId7-X-krEJK6Lm5rr/pages/_error.js",
-    "revision": "20a75ad1229a8878837c"
+    "url": "/_next/static/LivNVh-Bpi56BKzLJfEiP/pages/_error.js",
+    "revision": "e83a99ca9cf4e7150434"
   },
   {
-    "url": "/_next/static/XntVId7-X-krEJK6Lm5rr/pages/about.js",
-    "revision": "e8a19d58f2977e86c27b"
+    "url": "/_next/static/LivNVh-Bpi56BKzLJfEiP/pages/about.js",
+    "revision": "40242346e81bf8e62469"
   },
   {
-    "url": "/_next/static/XntVId7-X-krEJK6Lm5rr/pages/article.js",
-    "revision": "ddfa3279344cf2ba7333"
+    "url": "/_next/static/LivNVh-Bpi56BKzLJfEiP/pages/article.js",
+    "revision": "924ba4eca907108eef85"
   },
   {
-    "url": "/_next/static/XntVId7-X-krEJK6Lm5rr/pages/draft.js",
-    "revision": "604dec7acaf1f533c872"
+    "url": "/_next/static/LivNVh-Bpi56BKzLJfEiP/pages/draft.js",
+    "revision": "c3d803374c6a5962e608"
   },
   {
-    "url": "/_next/static/XntVId7-X-krEJK6Lm5rr/pages/index.js",
-    "revision": "5dcb228da44a137f9ee1"
+    "url": "/_next/static/LivNVh-Bpi56BKzLJfEiP/pages/index.js",
+    "revision": "a36f5edbfb50155bc48d"
   },
   {
-    "url": "/_next/static/XntVId7-X-krEJK6Lm5rr/pages/overview.js",
-    "revision": "f29e0ca50b54c0937f99"
+    "url": "/_next/static/LivNVh-Bpi56BKzLJfEiP/pages/overview.js",
+    "revision": "d06b81c249d7ac802ac8"
   },
   {
-    "url": "/_next/static/XntVId7-X-krEJK6Lm5rr/pages/summit.js",
-    "revision": "6398cccc596cde3af594"
+    "url": "/_next/static/LivNVh-Bpi56BKzLJfEiP/pages/summit.js",
+    "revision": "4cd9f46ecff01049ba3f"
   },
   {
-    "url": "/_next/static/XntVId7-X-krEJK6Lm5rr/pages/welcome.js",
-    "revision": "a708dd11310670110ab3"
+    "url": "/_next/static/LivNVh-Bpi56BKzLJfEiP/pages/welcome.js",
+    "revision": "259297dfea5054ae8a7a"
   },
   {
     "url": "/_next/static/chunks/commons.a783cd9ce934e1bb0e5f.js",
@@ -83,7 +83,12 @@ self.addEventListener('message', (event) => {
  * requests for URLs in the manifest.
  * See https://goo.gl/S9QRab
  */
-self.__precacheManifest = [].concat(self.__precacheManifest || []);
+self.__precacheManifest = [
+  {
+    "url": "static/manifest.json",
+    "revision": "91bfe2aa3842cf633ac77f31807ab505"
+  }
+].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/^https?.*/, new workbox.strategies.NetworkFirst({ "cacheName":"offlineCache", plugins: [new workbox.expiration.Plugin({ maxEntries: 200, purgeOnQuotaError: false })] }), 'GET');
