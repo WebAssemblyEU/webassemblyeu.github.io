@@ -1,6 +1,7 @@
 {
   "name": "WebAssembly EU",
-  "short_name": "WebAssembly",
+  "short_name": "WebAssembly EU",
+  "description": "WebAssembly EU Community",
   "start_url": "index.html?utm_source=homescreen",
   "scope": "./",
   "icons": [

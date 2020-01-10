@@ -1,39 +1,39 @@
 self.__precacheManifest = [
   {
-    "url": "/_next/static/SDcPsoaMIa6I8sV4p8FLw/pages/_app.js",
-    "revision": "b713dc814b9c19ac0a64"
+    "url": "/_next/static/P6rcYLb-Sem3Y5FGEQ_G0/pages/_app.js",
+    "revision": "995f8517e0608065f61b"
   },
   {
-    "url": "/_next/static/SDcPsoaMIa6I8sV4p8FLw/pages/_error.js",
-    "revision": "5b4602d4310316014732"
+    "url": "/_next/static/P6rcYLb-Sem3Y5FGEQ_G0/pages/_error.js",
+    "revision": "74c9c339a17116f73021"
   },
   {
-    "url": "/_next/static/SDcPsoaMIa6I8sV4p8FLw/pages/about.js",
-    "revision": "2e0babc7ffa2d40ac1c4"
+    "url": "/_next/static/P6rcYLb-Sem3Y5FGEQ_G0/pages/about.js",
+    "revision": "46ae0d19fdba90a10c00"
   },
   {
-    "url": "/_next/static/SDcPsoaMIa6I8sV4p8FLw/pages/article.js",
-    "revision": "0254213ed673c65e91c3"
+    "url": "/_next/static/P6rcYLb-Sem3Y5FGEQ_G0/pages/article.js",
+    "revision": "592979eeba9f6ccb10c4"
   },
   {
-    "url": "/_next/static/SDcPsoaMIa6I8sV4p8FLw/pages/draft.js",
-    "revision": "a3884e3b45f15782658e"
+    "url": "/_next/static/P6rcYLb-Sem3Y5FGEQ_G0/pages/draft.js",
+    "revision": "de1212d9db836c5d590d"
   },
   {
-    "url": "/_next/static/SDcPsoaMIa6I8sV4p8FLw/pages/index.js",
-    "revision": "a6f4514bf9bfc5476e2e"
+    "url": "/_next/static/P6rcYLb-Sem3Y5FGEQ_G0/pages/index.js",
+    "revision": "8312cdaeaae8f157226c"
   },
   {
-    "url": "/_next/static/SDcPsoaMIa6I8sV4p8FLw/pages/overview.js",
-    "revision": "582639fdb44f58e64869"
+    "url": "/_next/static/P6rcYLb-Sem3Y5FGEQ_G0/pages/overview.js",
+    "revision": "729f32d12db297506c00"
   },
   {
-    "url": "/_next/static/SDcPsoaMIa6I8sV4p8FLw/pages/summit.js",
-    "revision": "4b3e68c6ba9dec2efc8f"
+    "url": "/_next/static/P6rcYLb-Sem3Y5FGEQ_G0/pages/summit.js",
+    "revision": "66b6b9557d8864cd764b"
   },
   {
-    "url": "/_next/static/SDcPsoaMIa6I8sV4p8FLw/pages/welcome.js",
-    "revision": "b4a0cf0ec51d5acedb29"
+    "url": "/_next/static/P6rcYLb-Sem3Y5FGEQ_G0/pages/welcome.js",
+    "revision": "46f6de5607c98a413d54"
   },
   {
     "url": "/_next/static/chunks/commons.a783cd9ce934e1bb0e5f.js",
